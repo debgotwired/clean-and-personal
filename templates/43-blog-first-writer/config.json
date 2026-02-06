@@ -1,0 +1,17 @@
+{
+  "name": "Blog First Writer",
+  "templateId": "43-blog-first-writer",
+  "version": "1.0.0",
+  "description": "Content-primary writer portfolio with article showcase, newsletter signup, and reading lists",
+  "style": {
+    "primary": "editorial-minimal",
+    "colorScheme": "reading-optimized",
+    "typography": "long-form-serif",
+    "layout": "blog-centered"
+  },
+  "bestFor": ["Writers", "Bloggers", "Journalists", "Content Creators", "Thought Leaders"],
+  "features": ["Featured articles", "Article grid", "Newsletter signup", "Reading time", "Tags/categories", "Search", "RSS feed"],
+  "colorPalette": {"primary": "#1e293b", "secondary": "#64748b", "accent": "#f43f5e", "background": "#ffffff", "text": "#0f172a"},
+  "fonts": {"heading": "Merriweather", "body": "Georgia"},
+  "sections": ["hero", "featured-posts", "all-posts", "about", "newsletter", "contact"]
+}

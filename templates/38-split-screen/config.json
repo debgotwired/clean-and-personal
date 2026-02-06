@@ -1,0 +1,44 @@
+{
+  "name": "Split Screen",
+  "templateId": "38-split-screen",
+  "version": "1.0.0",
+  "description": "Dual-pane split screen design with fixed left panel and scrollable right content",
+  "style": {
+    "primary": "modern-asymmetric",
+    "colorScheme": "contrasting-halves",
+    "typography": "geometric-modern",
+    "layout": "split-screen-fixed"
+  },
+  "bestFor": [
+    "Personal Brands",
+    "Minimal Portfolios",
+    "About Pages",
+    "Artist Portfolios",
+    "Profile Sites"
+  ],
+  "features": [
+    "50/50 split layout",
+    "Fixed left panel",
+    "Scrollable right content",
+    "Contrasting themes",
+    "Responsive stacking",
+    "Image backgrounds",
+    "Smooth transitions"
+  ],
+  "colorPalette": {
+    "primary": "#6366f1",
+    "secondary": "#0f172a",
+    "accent": "#f43f5e",
+    "leftBg": "#0f172a",
+    "rightBg": "#ffffff",
+    "text": "#1f2937"
+  },
+  "fonts": {
+    "heading": "Space Grotesk",
+    "body": "Inter"
+  },
+  "sections": [
+    "left-panel",
+    "right-content"
+  ]
+}

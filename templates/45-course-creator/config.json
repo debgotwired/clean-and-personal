@@ -1,0 +1,17 @@
+{
+  "name": "Course Creator",
+  "templateId": "45-course-creator",
+  "version": "1.0.0",
+  "description": "Teaching portfolio with course catalog, student testimonials, and enrollment CTAs",
+  "style": {
+    "primary": "educational-approachable",
+    "colorScheme": "learning-warm",
+    "typography": "friendly-readable",
+    "layout": "course-catalog"
+  },
+  "bestFor": ["Course Creators", "Educators", "Teachers", "Coaches", "Trainers"],
+  "features": ["Course catalog", "Curriculum preview", "Student testimonials", "Pricing tiers", "Enrollment CTA", "Free resources", "About instructor"],
+  "colorPalette": {"primary": "#0ea5e9", "secondary": "#8b5cf6", "accent": "#f59e0b", "background": "#ffffff", "text": "#1e293b"},
+  "fonts": {"heading": "Plus Jakarta Sans", "body": "Inter"},
+  "sections": ["hero", "courses", "testimonials", "about", "free-resources", "pricing", "contact"]
+}

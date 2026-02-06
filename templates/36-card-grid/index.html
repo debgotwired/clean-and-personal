@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Grid Portfolio | Visual Showcase</title>
+    <meta name="description" content="Pinterest-style card grid portfolio with category filtering and lightbox gallery">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <a href="#" class="logo">Visual Studio</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Creative <span class="gradient-text">Visual Stories</span>
+            </h1>
+            <p class="hero-subtitle">
+                Curated collection of stunning photography, design work, and visual narratives.
+                Explore my portfolio of creative projects and artistic expressions.
+            </p>
+            <a href="#gallery" class="btn btn-primary">Explore Gallery</a>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="photography">Photography</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="illustration">Illustration</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Grid Section -->
+    <section id="gallery" class="card-grid-section">
+        <div class="container">
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <article class="card" data-category="photography">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">
+                            <span class="placeholder-icon">📷</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Sunset Dreams" data-category="Photography">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sunset Dreams</h3>
+                        <p class="card-category">Photography</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card" data-category="design">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #14b8a6, #06b6d4);">
+                            <span class="placeholder-icon">🎨</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Modern UI Kit" data-category="Design">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Modern UI Kit</h3>
+                        <p class="card-category">Design</p>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card" data-category="illustration">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #f59e0b, #ec4899);">
+                            <span class="placeholder-icon">✏️</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Character Design" data-category="Illustration">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Character Design</h3>
+                        <p class="card-category">Illustration</p>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card" data-category="branding">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #8b5cf6, #6366f1);">
+                            <span class="placeholder-icon">🏢</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Brand Identity" data-category="Branding">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Brand Identity</h3>
+                        <p class="card-category">Branding</p>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card" data-category="photography">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #06b6d4, #8b5cf6);">
+                            <span class="placeholder-icon">🌊</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Ocean Waves" data-category="Photography">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Ocean Waves</h3>
+                        <p class="card-category">Photography</p>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card" data-category="design">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #ec4899, #f59e0b);">
+                            <span class="placeholder-icon">💻</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="App Interface" data-category="Design">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">App Interface</h3>
+                        <p class="card-category">Design</p>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="card" data-category="illustration">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #14b8a6, #ec4899);">
+                            <span class="placeholder-icon">🎭</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Fantasy Art" data-category="Illustration">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fantasy Art</h3>
+                        <p class="card-category">Illustration</p>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="card" data-category="photography">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #f59e0b, #8b5cf6);">
+                            <span class="placeholder-icon">🏔️</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Mountain Vista" data-category="Photography">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mountain Vista</h3>
+                        <p class="card-category">Photography</p>
+                    </div>
+                </article>
+
+                <!-- Card 9 -->
+                <article class="card" data-category="branding">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #ec4899, #14b8a6);">
+                            <span class="placeholder-icon">📦</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Package Design" data-category="Branding">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Package Design</h3>
+                        <p class="card-category">Branding</p>
+                    </div>
+                </article>
+
+                <!-- Card 10 -->
+                <article class="card" data-category="design">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">
+                            <span class="placeholder-icon">🖥️</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Web Design" data-category="Design">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Web Design</h3>
+                        <p class="card-category">Design</p>
+                    </div>
+                </article>
+
+                <!-- Card 11 -->
+                <article class="card" data-category="illustration">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #06b6d4, #f59e0b);">
+                            <span class="placeholder-icon">🌟</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Cosmic Dreams" data-category="Illustration">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cosmic Dreams</h3>
+                        <p class="card-category">Illustration</p>
+                    </div>
+                </article>
+
+                <!-- Card 12 -->
+                <article class="card" data-category="photography">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #14b8a6, #8b5cf6);">
+                            <span class="placeholder-icon">🌆</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="view-btn" data-title="Urban Night" data-category="Photography">View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Urban Night</h3>
+                        <p class="card-category">Photography</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-badge">About</span>
+                    <h2 class="section-title">Creating Visual Excellence</h2>
+                    <p>
+                        I'm a visual artist and designer specializing in photography, illustration, and brand identity.
+                        With over 8 years of experience, I help brands and individuals tell their stories through
+                        compelling visual narratives.
+                    </p>
+                    <p>
+                        My work has been featured in international publications and exhibitions. I believe in the power
+                        of visual communication to inspire, engage, and transform perspectives.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Awards</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-about">
+                        <span style="font-size: 6rem;">🎨</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's Create Together</h2>
+                <p class="section-subtitle">
+                    Have a project in mind? I'd love to hear about it and discuss how we can bring your vision to life.
+                </p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:hello@visualstudio.com">hello@visualstudio.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h4>Social</h4>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Visual Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-image">
+                <div class="lightbox-placeholder"></div>
+            </div>
+            <div class="lightbox-info">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-category"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

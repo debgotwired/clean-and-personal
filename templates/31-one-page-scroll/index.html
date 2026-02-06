@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Scroll | Modern Portfolio Experience</title>
+    <meta name="description" content="Single page scrolling portfolio with full-screen sections and smooth navigation">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Progress Indicator -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Section Navigation Dots -->
+    <nav class="section-nav" id="sectionNav">
+        <a href="#hero" class="nav-dot active" data-section="0" aria-label="Hero section">
+            <span class="dot-label">Home</span>
+        </a>
+        <a href="#about" class="nav-dot" data-section="1" aria-label="About section">
+            <span class="dot-label">About</span>
+        </a>
+        <a href="#work" class="nav-dot" data-section="2" aria-label="Work section">
+            <span class="dot-label">Work</span>
+        </a>
+        <a href="#services" class="nav-dot" data-section="3" aria-label="Services section">
+            <span class="dot-label">Services</span>
+        </a>
+        <a href="#testimonials" class="nav-dot" data-section="4" aria-label="Testimonials section">
+            <span class="dot-label">Testimonials</span>
+        </a>
+        <a href="#contact" class="nav-dot" data-section="5" aria-label="Contact section">
+            <span class="dot-label">Contact</span>
+        </a>
+    </nav>
+
+    <!-- Scroll Container -->
+    <div class="scroll-container">
+        <!-- Hero Section -->
+        <section id="hero" class="section section-hero" data-section="0">
+            <div class="parallax-bg" data-speed="0.5"></div>
+            <div class="section-content">
+                <div class="hero-content">
+                    <span class="hero-badge">Creative Developer</span>
+                    <h1 class="hero-title">
+                        Building Digital<br>
+                        <span class="gradient-text">Experiences</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Crafting beautiful, performant, and user-centered web applications
+                        that make a difference.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#work" class="btn btn-primary">View Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section-about" data-section="1">
+            <div class="parallax-bg" data-speed="0.3"></div>
+            <div class="section-content">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <span class="section-badge">About Me</span>
+                        <h2 class="section-title">Passionate About Innovation</h2>
+                        <p>
+                            I'm a full-stack developer with 8+ years of experience creating
+                            digital products that combine beautiful design with powerful functionality.
+                        </p>
+                        <p>
+                            My approach focuses on understanding user needs, rapid prototyping,
+                            and iterative development to deliver solutions that exceed expectations.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="150">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="8">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-skills">
+                        <h3>Skills & Expertise</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">Next.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="section section-work" data-section="2">
+            <div class="parallax-bg" data-speed="0.4"></div>
+            <div class="section-content">
+                <div class="section-header">
+                    <span class="section-badge">Portfolio</span>
+                    <h2 class="section-title">Featured Work</h2>
+                </div>
+                <div class="work-grid">
+                    <article class="work-card">
+                        <div class="work-image">
+                            <div class="placeholder-img">🚀</div>
+                        </div>
+                        <div class="work-content">
+                            <h3>SaaS Dashboard Platform</h3>
+                            <p>Modern analytics dashboard with real-time data visualization and team collaboration features.</p>
+                            <div class="work-tags">
+                                <span>React</span>
+                                <span>D3.js</span>
+                                <span>WebSocket</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-image">
+                            <div class="placeholder-img">🎨</div>
+                        </div>
+                        <div class="work-content">
+                            <h3>E-commerce Redesign</h3>
+                            <p>Complete UX overhaul resulting in 45% increase in conversion rates and improved mobile experience.</p>
+                            <div class="work-tags">
+                                <span>Next.js</span>
+                                <span>Shopify</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-image">
+                            <div class="placeholder-img">📱</div>
+                        </div>
+                        <div class="work-content">
+                            <h3>Mobile-First Web App</h3>
+                            <p>Progressive web app with offline capabilities and native-like performance across all devices.</p>
+                            <div class="work-tags">
+                                <span>PWA</span>
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section section-services" data-section="3">
+            <div class="parallax-bg" data-speed="0.3"></div>
+            <div class="section-content">
+                <div class="section-header">
+                    <span class="section-badge">What I Do</span>
+                    <h2 class="section-title">Services</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>Custom web applications built with modern frameworks and best practices for performance and scalability.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered design that balances aesthetics with usability to create engaging digital experiences.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>Performance Optimization</h3>
+                        <p>Speed and efficiency improvements through code optimization, caching strategies, and infrastructure tuning.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>Consulting</h3>
+                        <p>Technical guidance and strategic planning to help teams build better products and improve workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section section-testimonials" data-section="4">
+            <div class="parallax-bg" data-speed="0.5"></div>
+            <div class="section-content">
+                <div class="section-header">
+                    <span class="section-badge">Testimonials</span>
+                    <h2 class="section-title">What Clients Say</h2>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card active">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">
+                            Exceptional work from start to finish. The attention to detail and commitment
+                            to quality exceeded our expectations. Our new platform is faster, more
+                            intuitive, and our users love it.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div class="author-info">
+                                <div class="author-name">John Doe</div>
+                                <div class="author-title">CEO, TechCorp</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">
+                            A true professional who delivers on promises. The project was completed
+                            on time, within budget, and the results speak for themselves. Highly recommend!
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div class="author-info">
+                                <div class="author-name">Sarah Miller</div>
+                                <div class="author-title">Founder, StartupHub</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">
+                            Outstanding technical skills combined with excellent communication.
+                            Made the entire development process smooth and collaborative.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MJ</div>
+                            <div class="author-info">
+                                <div class="author-name">Mike Johnson</div>
+                                <div class="author-title">Product Manager, InnovateLab</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" aria-label="Previous testimonial">&larr;</button>
+                    <div class="slider-dots"></div>
+                    <button class="slider-btn next" aria-label="Next testimonial">&rarr;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-contact" data-section="5">
+            <div class="parallax-bg" data-speed="0.4"></div>
+            <div class="section-content">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <span class="section-badge">Get in Touch</span>
+                        <h2 class="section-title">Let's Work Together</h2>
+                        <p>
+                            Have a project in mind? I'd love to hear about it.
+                            Let's create something amazing together.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <a href="mailto:hello@example.com">hello@example.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">💼</span>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🐙</span>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

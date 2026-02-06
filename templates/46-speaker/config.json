@@ -1,0 +1,17 @@
+{
+  "name": "Speaker",
+  "templateId": "46-speaker",
+  "version": "1.0.0",
+  "description": "Conference speaker portfolio with talk topics, speaking reel, and booking information",
+  "style": {
+    "primary": "professional-impactful",
+    "colorScheme": "stage-presence",
+    "typography": "bold-confident",
+    "layout": "speaker-showcase"
+  },
+  "bestFor": ["Conference Speakers", "Keynote Speakers", "Public Speakers", "Thought Leaders", "Presenters"],
+  "features": ["Speaking reel video", "Talk topics", "Past events", "Testimonials", "Media kit download", "Booking form", "Travel info"],
+  "colorPalette": {"primary": "#dc2626", "secondary": "#1e293b", "accent": "#f59e0b", "background": "#ffffff", "text": "#0f172a"},
+  "fonts": {"heading": "Montserrat", "body": "Source Sans Pro"},
+  "sections": ["hero", "speaking-reel", "topics", "past-events", "testimonials", "media-kit", "booking"]
+}

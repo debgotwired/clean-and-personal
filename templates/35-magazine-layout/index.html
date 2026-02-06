@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Portfolio Magazine | Editorial Design</title>
+    <meta name="description" content="Editorial-style portfolio with magazine layout, featured articles, and elegant typography">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="magazine-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="publication-info">
+                    <span class="issue">Issue No. 01</span>
+                    <span class="date">February 2026</span>
+                </div>
+                <h1 class="masthead">The Portfolio</h1>
+                <nav class="header-nav">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="header-divider"></div>
+        </div>
+    </header>
+
+    <!-- Featured Article Hero -->
+    <article class="featured-article">
+        <div class="container">
+            <div class="featured-content">
+                <span class="article-category">Featured Story</span>
+                <h2 class="featured-title">
+                    <span class="drop-cap">C</span>rafting Digital Experiences That Matter
+                </h2>
+                <p class="featured-excerpt">
+                    In an age of digital noise, I believe in creating work that resonates deeply with users—
+                    combining thoughtful design, purposeful functionality, and attention to the smallest details
+                    that transform good products into exceptional ones.
+                </p>
+                <div class="featured-meta">
+                    <span class="author">By Alex Thompson</span>
+                    <span class="separator">•</span>
+                    <span class="read-time">8 min read</span>
+                </div>
+            </div>
+            <div class="featured-image">
+                <div class="image-placeholder">📐</div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Categories Bar -->
+    <section class="categories-bar">
+        <div class="container">
+            <nav class="categories-nav">
+                <button class="category-btn active" data-category="all">All Work</button>
+                <button class="category-btn" data-category="design">Design</button>
+                <button class="category-btn" data-category="development">Development</button>
+                <button class="category-btn" data-category="strategy">Strategy</button>
+                <button class="category-btn" data-category="branding">Branding</button>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Article Grid -->
+    <section id="work" class="article-grid">
+        <div class="container">
+            <!-- Large Feature -->
+            <article class="article-card article-large" data-category="design">
+                <div class="article-image">
+                    <div class="image-placeholder">🎨</div>
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Design</span>
+                    <h3 class="article-title">The Art of Minimalist Interface Design</h3>
+                    <p class="article-excerpt">
+                        Exploring how constraint breeds creativity and why less truly can be more
+                        in modern digital product design. A deep dive into the principles that
+                        guide my design philosophy.
+                    </p>
+                    <div class="article-meta">
+                        <span>6 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Pull Quote -->
+            <aside class="pull-quote">
+                <blockquote>
+                    "Good design is obvious. Great design is transparent."
+                </blockquote>
+                <cite>— Joe Sparano</cite>
+            </aside>
+
+            <!-- Medium Articles -->
+            <article class="article-card article-medium" data-category="development">
+                <div class="article-image">
+                    <div class="image-placeholder">⚡</div>
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Development</span>
+                    <h3 class="article-title">Building for Performance</h3>
+                    <p class="article-excerpt">
+                        How I optimize every project for speed, focusing on core web vitals
+                        and user experience metrics that actually matter.
+                    </p>
+                    <div class="article-meta">
+                        <span>5 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card article-medium" data-category="strategy">
+                <div class="article-image">
+                    <div class="image-placeholder">🎯</div>
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Strategy</span>
+                    <h3 class="article-title">From Concept to Launch</h3>
+                    <p class="article-excerpt">
+                        My proven process for taking products from initial sketches through
+                        successful market launches.
+                    </p>
+                    <div class="article-meta">
+                        <span>7 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Small Articles -->
+            <article class="article-card article-small" data-category="branding">
+                <span class="article-tag">Branding</span>
+                <h3 class="article-title">Brand Identity Systems</h3>
+                <p class="article-excerpt">
+                    Creating cohesive visual languages that tell compelling brand stories.
+                </p>
+            </article>
+
+            <article class="article-card article-small" data-category="design">
+                <span class="article-tag">Design</span>
+                <h3 class="article-title">Color Theory in Practice</h3>
+                <p class="article-excerpt">
+                    How I use color psychology to enhance user experience and drive action.
+                </p>
+            </article>
+
+            <article class="article-card article-small" data-category="development">
+                <span class="article-tag">Development</span>
+                <h3 class="article-title">Modern CSS Techniques</h3>
+                <p class="article-excerpt">
+                    Leveraging the latest CSS features for better, more maintainable code.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-image">
+                    <div class="image-placeholder">✦</div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-heading">About the Author</h2>
+                    <p class="about-text">
+                        <span class="drop-cap">I</span>'m a designer and developer based in San Francisco,
+                        specializing in creating digital experiences that blend beautiful design with
+                        purposeful functionality. For the past decade, I've helped startups and established
+                        brands craft products that users love.
+                    </p>
+                    <p class="about-text">
+                        My work has been featured in various design publications and has won several
+                        industry awards. I believe in the power of good design to solve real problems
+                        and create meaningful connections between people and technology.
+                    </p>
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <span class="credential-icon">🏆</span>
+                            <span>Awwwards Winner</span>
+                        </div>
+                        <div class="credential-item">
+                            <span class="credential-icon">✨</span>
+                            <span>FWA Site of the Day</span>
+                        </div>
+                        <div class="credential-item">
+                            <span class="credential-icon">📚</span>
+                            <span>Published Author</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-heading">Areas of Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-number">01</div>
+                    <h3>User Experience Design</h3>
+                    <p>
+                        Creating intuitive, delightful experiences through user research, wireframing,
+                        prototyping, and iterative testing.
+                    </p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-number">02</div>
+                    <h3>Interface Development</h3>
+                    <p>
+                        Building responsive, accessible, and performant interfaces using modern
+                        web technologies and best practices.
+                    </p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-number">03</div>
+                    <h3>Brand Strategy</h3>
+                    <p>
+                        Developing cohesive brand identities that resonate with target audiences
+                        and stand out in competitive markets.
+                    </p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-number">04</div>
+                    <h3>Creative Direction</h3>
+                    <p>
+                        Leading design teams and guiding projects from concept through execution
+                        with a focus on quality and innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-heading">Let's Create Something Together</h2>
+                <p class="contact-text">
+                    I'm always interested in hearing about new projects and opportunities.
+                    Whether you have a question or just want to say hello, I'll do my best
+                    to get back to you.
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:hello@example.com" class="contact-link">
+                        <span class="contact-icon">✉️</span>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">hello@example.com</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="contact-icon">💼</span>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">@yourprofile</span>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="contact-icon">🐦</span>
+                        <span class="contact-label">Twitter</span>
+                        <span class="contact-value">@yourhandle</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="magazine-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="masthead-small">The Portfolio</h3>
+                    <p>A curated collection of design work and creative thinking.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="#work">Work</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <nav class="footer-nav">
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Dribbble</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Portfolio | Dual-Pane Design</title>
+    <meta name="description" content="Modern split-screen portfolio with fixed left panel and scrollable right content">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Split Container -->
+    <div class="split-container">
+        <!-- Left Panel (Fixed) -->
+        <aside class="left-panel">
+            <div class="left-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <div class="avatar">👤</div>
+                    </div>
+                    <h1 class="name">Alex Morgan</h1>
+                    <p class="title">Creative Developer & Designer</p>
+                </div>
+
+                <nav class="side-nav">
+                    <a href="#about" class="nav-link active">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <span class="social-icon">💻</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <span class="social-icon">💼</span>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                        <span class="social-icon">🐦</span>
+                    </a>
+                    <a href="mailto:hello@alexmorgan.com" class="social-link" aria-label="Email">
+                        <span class="social-icon">📧</span>
+                    </a>
+                </div>
+
+                <div class="availability">
+                    <div class="status-dot"></div>
+                    <span>Available for freelance</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Panel (Scrollable) -->
+        <main class="right-panel">
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-text">
+                    I'm a creative developer and designer based in San Francisco, passionate about crafting
+                    beautiful digital experiences that blend aesthetics with functionality. With 7+ years of
+                    experience, I specialize in front-end development, UI/UX design, and creative coding.
+                </p>
+                <p class="section-text">
+                    My work focuses on creating interfaces that are not only visually appealing but also
+                    intuitive and accessible. I believe in the power of good design to solve complex problems
+                    and improve people's lives.
+                </p>
+                <div class="quote-box">
+                    <blockquote>
+                        "Design is not just what it looks like and feels like. Design is how it works."
+                    </blockquote>
+                    <cite>— Steve Jobs</cite>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="content-section">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="experience-list">
+                    <article class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Senior Front-End Developer</h3>
+                                <p class="exp-company">TechCorp • San Francisco, CA</p>
+                            </div>
+                            <span class="exp-date">2022 - Present</span>
+                        </div>
+                        <p class="exp-description">
+                            Leading front-end development for enterprise web applications. Building scalable
+                            component libraries and mentoring junior developers. Improved application performance
+                            by 40% through code optimization and best practices.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </article>
+
+                    <article class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">UI/UX Developer</h3>
+                                <p class="exp-company">DesignStudio • Remote</p>
+                            </div>
+                            <span class="exp-date">2020 - 2022</span>
+                        </div>
+                        <p class="exp-description">
+                            Designed and developed responsive web applications for various clients. Conducted
+                            user research, created prototypes, and implemented designs using modern frameworks.
+                            Successfully delivered 25+ projects on time and within budget.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </article>
+
+                    <article class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Junior Developer</h3>
+                                <p class="exp-company">StartupXYZ • New York, NY</p>
+                            </div>
+                            <span class="exp-date">2018 - 2020</span>
+                        </div>
+                        <p class="exp-description">
+                            Contributed to building a SaaS platform from the ground up. Worked closely with
+                            designers to implement pixel-perfect interfaces. Participated in code reviews and
+                            agile development processes.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <h2 class="section-title">Featured Projects</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                                <span class="project-icon">🎨</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Design System Pro</h3>
+                            <p class="project-description">
+                                Comprehensive design system with 100+ components, documentation, and tooling
+                                for consistent product development.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #f43f5e, #ec4899);">
+                                <span class="project-icon">📱</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Mobile Banking App</h3>
+                            <p class="project-description">
+                                Modern banking app with intuitive UI, real-time transactions, and advanced
+                                security features. Used by 100K+ users.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #14b8a6, #06b6d4);">
+                                <span class="project-icon">🚀</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">SaaS Dashboard</h3>
+                            <p class="project-description">
+                                Analytics dashboard with real-time data visualization, custom reports, and
+                                collaborative features for teams.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #f59e0b, #f97316);">
+                                <span class="project-icon">🛍️</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <p class="project-description">
+                                Full-featured e-commerce solution with product management, payment processing,
+                                and order tracking.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="content-section">
+                <h2 class="section-title">Skills & Tools</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Front-End</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">Vue.js</span>
+                            <span class="skill-item">TypeScript</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">HTML/CSS</span>
+                            <span class="skill-item">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Design</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Figma</span>
+                            <span class="skill-item">Adobe XD</span>
+                            <span class="skill-item">Sketch</span>
+                            <span class="skill-item">Prototyping</span>
+                            <span class="skill-item">UI/UX</span>
+                            <span class="skill-item">Design Systems</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Back-End</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">Express</span>
+                            <span class="skill-item">PostgreSQL</span>
+                            <span class="skill-item">MongoDB</span>
+                            <span class="skill-item">REST APIs</span>
+                            <span class="skill-item">GraphQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Tools & Others</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">Webpack</span>
+                            <span class="skill-item">Jest</span>
+                            <span class="skill-item">CI/CD</span>
+                            <span class="skill-item">Agile</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-text">
+                    I'm always interested in hearing about new projects and opportunities.
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2026 Alex Morgan. Built with passion and code.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

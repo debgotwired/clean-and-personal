@@ -1,0 +1,47 @@
+{
+  "name": "One Page Scroll",
+  "templateId": "31-one-page-scroll",
+  "version": "1.0.0",
+  "description": "Single page scrolling experience with smooth full-screen sections and scroll-snap behavior",
+  "style": {
+    "primary": "modern-minimal",
+    "colorScheme": "monochrome-accent",
+    "typography": "geometric-sans",
+    "layout": "full-screen-sections"
+  },
+  "bestFor": [
+    "Product Launches",
+    "Portfolio Presentations",
+    "Agency Websites",
+    "Creative Showcases",
+    "Landing Pages"
+  ],
+  "features": [
+    "Full-screen scroll sections",
+    "Scroll-snap behavior",
+    "Parallax effects",
+    "Section navigation dots",
+    "Smooth transitions",
+    "Mobile responsive",
+    "Progress indicator"
+  ],
+  "colorPalette": {
+    "primary": "#2563eb",
+    "secondary": "#7c3aed",
+    "accent": "#f59e0b",
+    "background": "#ffffff",
+    "text": "#1f2937"
+  },
+  "fonts": {
+    "heading": "DM Sans",
+    "body": "Inter"
+  },
+  "sections": [
+    "hero",
+    "about",
+    "work",
+    "services",
+    "testimonials",
+    "contact"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Startup Founder",
+  "templateId": "42-startup-founder",
+  "version": "1.0.0",
+  "description": "Pitch-focused founder portfolio with traction metrics, vision statement, and investor CTAs",
+  "style": {
+    "primary": "bold-visionary",
+    "colorScheme": "startup-energetic",
+    "typography": "modern-impactful",
+    "layout": "pitch-deck"
+  },
+  "bestFor": ["Startup Founders", "Entrepreneurs", "CEOs", "Innovators", "Fundraisers"],
+  "features": ["Vision statement", "Traction metrics", "Pitch deck embed", "Team showcase", "Investor CTA", "Press mentions", "Funding progress"],
+  "colorPalette": {"primary": "#6366f1", "secondary": "#8b5cf6", "accent": "#f59e0b", "background": "#fafafa", "text": "#1f2937"},
+  "fonts": {"heading": "Poppins", "body": "Inter"},
+  "sections": ["hero", "vision", "traction", "product", "team", "investors", "contact"]
+}

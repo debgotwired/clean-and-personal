@@ -1,0 +1,17 @@
+{
+  "name": "Community Builder",
+  "templateId": "49-community-builder",
+  "version": "1.0.0",
+  "description": "Network-focused portfolio for community leaders with member showcase and engagement metrics",
+  "style": {
+    "primary": "community-welcoming",
+    "colorScheme": "inclusive-warm",
+    "typography": "approachable-friendly",
+    "layout": "community-hub"
+  },
+  "bestFor": ["Community Managers", "Community Builders", "Network Leaders", "Forum Moderators", "Event Organizers"],
+  "features": ["Member showcase", "Community stats", "Events calendar", "Resources", "Join CTA", "Success stories", "Guidelines"],
+  "colorPalette": {"primary": "#10b981", "secondary": "#0ea5e9", "accent": "#f59e0b", "background": "#fafafa", "text": "#1f2937"},
+  "fonts": {"heading": "Outfit", "body": "Inter"},
+  "sections": ["hero", "community-stats", "members", "events", "resources", "success-stories", "join"]
+}

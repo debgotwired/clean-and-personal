@@ -1,0 +1,46 @@
+{
+  "name": "Masonry Grid",
+  "templateId": "40-masonry-grid",
+  "version": "1.0.0",
+  "description": "Variable-height masonry grid layout for dynamic content with staggered appearance",
+  "style": {
+    "primary": "dynamic-flowing",
+    "colorScheme": "neutral-accents",
+    "typography": "clean-minimal",
+    "layout": "masonry-dynamic"
+  },
+  "bestFor": [
+    "Photography Portfolios",
+    "Art Galleries",
+    "Design Showcases",
+    "Blog Layouts",
+    "Content Curators"
+  ],
+  "features": [
+    "True masonry layout",
+    "Variable card heights",
+    "Lazy loading",
+    "Hover effects",
+    "Category filtering",
+    "Lightbox view",
+    "Responsive columns"
+  ],
+  "colorPalette": {
+    "primary": "#0ea5e9",
+    "secondary": "#64748b",
+    "accent": "#f59e0b",
+    "background": "#ffffff",
+    "text": "#1e293b"
+  },
+  "fonts": {
+    "heading": "Sora",
+    "body": "Inter"
+  },
+  "sections": [
+    "hero",
+    "filters",
+    "masonry-grid",
+    "about",
+    "contact"
+  ]
+}

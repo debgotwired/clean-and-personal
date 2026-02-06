@@ -1,0 +1,46 @@
+{
+  "name": "Full Screen Slides",
+  "templateId": "34-full-screen-slides",
+  "version": "1.0.0",
+  "description": "Presentation-style full-screen slides with keyboard navigation and slide transitions",
+  "style": {
+    "primary": "presentation-bold",
+    "colorScheme": "high-contrast",
+    "typography": "display-large",
+    "layout": "slide-deck"
+  },
+  "bestFor": [
+    "Conference Speakers",
+    "Presenters",
+    "Storytellers",
+    "Product Demos",
+    "Pitch Decks"
+  ],
+  "features": [
+    "Full-screen slides",
+    "Keyboard navigation (arrows)",
+    "Slide transitions",
+    "Progress indicator",
+    "Speaker notes toggle",
+    "Auto-advance option",
+    "Touch swipe support"
+  ],
+  "colorPalette": {
+    "primary": "#0ea5e9",
+    "secondary": "#8b5cf6",
+    "accent": "#f59e0b",
+    "background": "#0f172a",
+    "text": "#f1f5f9"
+  },
+  "fonts": {
+    "heading": "Montserrat",
+    "body": "Source Sans Pro"
+  },
+  "sections": [
+    "slide-1-intro",
+    "slide-2-about",
+    "slide-3-work",
+    "slide-4-skills",
+    "slide-5-contact"
+  ]
+}

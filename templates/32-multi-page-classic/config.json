@@ -1,0 +1,47 @@
+{
+  "name": "Multi Page Classic",
+  "templateId": "32-multi-page-classic",
+  "version": "1.0.0",
+  "description": "Traditional multi-page website with separate HTML files for different sections and classic navigation",
+  "style": {
+    "primary": "professional-traditional",
+    "colorScheme": "corporate-neutral",
+    "typography": "classic-serif",
+    "layout": "multi-page"
+  },
+  "bestFor": [
+    "Corporate Websites",
+    "Professional Services",
+    "Law Firms",
+    "Consulting Firms",
+    "Traditional Businesses"
+  ],
+  "features": [
+    "Multiple HTML pages",
+    "Classic top navigation",
+    "Breadcrumb navigation",
+    "Footer sitemap",
+    "SEO-friendly structure",
+    "Print-optimized pages",
+    "Contact form"
+  ],
+  "colorPalette": {
+    "primary": "#1e40af",
+    "secondary": "#64748b",
+    "accent": "#dc2626",
+    "background": "#f8fafc",
+    "text": "#0f172a"
+  },
+  "fonts": {
+    "heading": "Libre Baskerville",
+    "body": "Source Sans Pro"
+  },
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "portfolio.html",
+    "blog.html",
+    "contact.html"
+  ]
+}

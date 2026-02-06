@@ -1,0 +1,47 @@
+{
+  "name": "Side Navigation",
+  "templateId": "33-side-navigation",
+  "version": "1.0.0",
+  "description": "Fixed sidebar navigation with content area, perfect for documentation or app-style portfolios",
+  "style": {
+    "primary": "modern-app-style",
+    "colorScheme": "dark-sidebar",
+    "typography": "system-ui",
+    "layout": "sidebar-fixed"
+  },
+  "bestFor": [
+    "Documentation Sites",
+    "Developer Portfolios",
+    "Technical Writers",
+    "Product Docs",
+    "Knowledge Bases"
+  ],
+  "features": [
+    "Fixed sidebar navigation",
+    "Collapsible menu items",
+    "Search functionality",
+    "Dark mode toggle",
+    "Breadcrumb trail",
+    "Table of contents",
+    "Responsive drawer"
+  ],
+  "colorPalette": {
+    "primary": "#6366f1",
+    "secondary": "#1e293b",
+    "accent": "#10b981",
+    "background": "#ffffff",
+    "sidebar": "#0f172a",
+    "text": "#1f2937"
+  },
+  "fonts": {
+    "heading": "Inter",
+    "body": "Inter",
+    "code": "JetBrains Mono"
+  },
+  "sections": [
+    "sidebar",
+    "content-area",
+    "toc",
+    "footer"
+  ]
+}

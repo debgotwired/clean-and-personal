@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Professional Services</title>
+    <meta name="description" content="Get in touch with Professional Services for expert consulting and advisory services">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">PS</span>
+                    <span class="logo-text">Professional Services</span>
+                </a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">Contact</li>
+            </ol>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="lead">Let's discuss how we can help you achieve your goals</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info-block">
+                    <h2>Get in Touch</h2>
+                    <p>We're here to answer your questions and discuss how our services can benefit your organization.</p>
+
+                    <div class="contact-method">
+                        <h3>Office</h3>
+                        <p>
+                            123 Business Avenue<br>
+                            Suite 100<br>
+                            New York, NY 10001
+                        </p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>Phone</h3>
+                        <p>(555) 123-4567</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@professionalservices.com">info@professionalservices.com</a></p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>Office Hours</h3>
+                        <p>
+                            Monday - Friday: 9:00 AM - 6:00 PM<br>
+                            Saturday: 10:00 AM - 2:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+                </div>
+
+                <form class="contact-form-block" id="contactForm">
+                    <h2>Send Us a Message</h2>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="business-consulting">Business Consulting</option>
+                            <option value="financial-advisory">Financial Advisory</option>
+                            <option value="legal-consultation">Legal Consultation</option>
+                            <option value="market-research">Market Research</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Professional Services</h3>
+                    <p>Delivering excellence in professional consulting and advisory services since 1999.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#business-consulting">Business Consulting</a></li>
+                        <li><a href="services.html#financial-advisory">Financial Advisory</a></li>
+                        <li><a href="services.html#legal-consultation">Legal Consultation</a></li>
+                        <li><a href="services.html#market-research">Market Research</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>123 Business Avenue<br>Suite 100<br>New York, NY 10001</p>
+                    <p>Phone: (555) 123-4567<br>Email: info@professionalservices.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Professional Services. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

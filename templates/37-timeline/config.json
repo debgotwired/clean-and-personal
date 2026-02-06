@@ -1,0 +1,45 @@
+{
+  "name": "Timeline",
+  "templateId": "37-timeline",
+  "version": "1.0.0",
+  "description": "Chronological timeline layout perfect for career journeys, project histories, or storytelling",
+  "style": {
+    "primary": "narrative-storytelling",
+    "colorScheme": "journey-blues",
+    "typography": "story-serif",
+    "layout": "vertical-timeline"
+  },
+  "bestFor": [
+    "Career Journeys",
+    "Project Histories",
+    "Life Stories",
+    "Company Milestones",
+    "Event Timelines"
+  ],
+  "features": [
+    "Vertical timeline layout",
+    "Scroll-triggered animations",
+    "Alternating left/right",
+    "Date markers",
+    "Milestone highlights",
+    "Image support",
+    "Responsive stacking"
+  ],
+  "colorPalette": {
+    "primary": "#3b82f6",
+    "secondary": "#06b6d4",
+    "accent": "#f59e0b",
+    "background": "#ffffff",
+    "text": "#1f2937"
+  },
+  "fonts": {
+    "heading": "Crimson Pro",
+    "body": "Open Sans"
+  },
+  "sections": [
+    "hero",
+    "timeline",
+    "about",
+    "contact"
+  ]
+}

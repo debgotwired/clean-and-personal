@@ -1,0 +1,48 @@
+{
+  "name": "Consultant",
+  "templateId": "27-consultant",
+  "version": "1.0.0",
+  "description": "Professional services-focused portfolio for consultants showcasing expertise, services, and client success stories",
+  "style": {
+    "primary": "professional-trustworthy",
+    "colorScheme": "corporate-blue",
+    "typography": "serif-modern",
+    "layout": "services-first"
+  },
+  "bestFor": [
+    "Business Consultants",
+    "Strategy Consultants",
+    "Management Consultants",
+    "Independent Consultants",
+    "Advisory Professionals"
+  ],
+  "features": [
+    "Services breakdown with pricing",
+    "Client success stories",
+    "Expertise areas showcase",
+    "Consultation booking CTA",
+    "Credentials & certifications",
+    "Case study deep dives",
+    "Professional color scheme"
+  ],
+  "colorPalette": {
+    "primary": "#1e3a8a",
+    "secondary": "#0891b2",
+    "accent": "#fbbf24",
+    "background": "#f8fafc",
+    "text": "#0f172a"
+  },
+  "fonts": {
+    "heading": "Merriweather",
+    "body": "Source Sans Pro"
+  },
+  "sections": [
+    "hero",
+    "services",
+    "expertise",
+    "case-studies",
+    "testimonials",
+    "credentials",
+    "contact"
+  ]
+}

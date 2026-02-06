@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation | Side Navigation Template</title>
+    <meta name="description" content="Modern documentation site with fixed sidebar navigation and dark theme">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">DevDocs</span>
+            </div>
+            <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+                <span>&times;</span>
+            </button>
+        </div>
+
+        <!-- Search -->
+        <div class="sidebar-search">
+            <input type="search" placeholder="Search documentation..." id="searchInput">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <a href="#getting-started" class="nav-item active">
+                    <span class="nav-icon">🎯</span>
+                    <span>Getting Started</span>
+                </a>
+                <a href="#installation" class="nav-item">
+                    <span class="nav-icon">📦</span>
+                    <span>Installation</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <button class="nav-section-title" data-section="guides">
+                    <span>Guides</span>
+                    <span class="chevron">▼</span>
+                </button>
+                <div class="nav-section-content" data-content="guides">
+                    <a href="#quick-start" class="nav-item">Quick Start</a>
+                    <a href="#configuration" class="nav-item">Configuration</a>
+                    <a href="#deployment" class="nav-item">Deployment</a>
+                    <a href="#best-practices" class="nav-item">Best Practices</a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <button class="nav-section-title" data-section="api">
+                    <span>API Reference</span>
+                    <span class="chevron">▼</span>
+                </button>
+                <div class="nav-section-content" data-content="api">
+                    <a href="#authentication" class="nav-item">Authentication</a>
+                    <a href="#endpoints" class="nav-item">Endpoints</a>
+                    <a href="#webhooks" class="nav-item">Webhooks</a>
+                    <a href="#errors" class="nav-item">Error Handling</a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <button class="nav-section-title" data-section="examples">
+                    <span>Examples</span>
+                    <span class="chevron">▼</span>
+                </button>
+                <div class="nav-section-content" data-content="examples">
+                    <a href="#basic" class="nav-item">Basic Usage</a>
+                    <a href="#advanced" class="nav-item">Advanced</a>
+                    <a href="#integrations" class="nav-item">Integrations</a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <a href="#faq" class="nav-item">
+                    <span class="nav-icon">❓</span>
+                    <span>FAQ</span>
+                </a>
+                <a href="#support" class="nav-item">
+                    <span class="nav-icon">💬</span>
+                    <span>Support</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Sidebar Footer -->
+        <div class="sidebar-footer">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+                <span>Dark Mode</span>
+            </button>
+            <div class="version-info">v1.0.0</div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="breadcrumbs">
+                <a href="#">Home</a>
+                <span>/</span>
+                <span>Getting Started</span>
+            </nav>
+            <div class="top-bar-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+                    <span>⚙️</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Content Area -->
+        <div class="content-wrapper">
+            <article class="content">
+                <section id="getting-started">
+                    <h1>Getting Started</h1>
+                    <p class="lead">
+                        Welcome to the documentation. This guide will help you get up and running quickly
+                        with all the features and capabilities of our platform.
+                    </p>
+
+                    <div class="info-box">
+                        <div class="info-box-icon">💡</div>
+                        <div class="info-box-content">
+                            <strong>New to our platform?</strong> Start with the Quick Start guide to learn
+                            the basics and build your first project in minutes.
+                        </div>
+                    </div>
+
+                    <h2>What You'll Learn</h2>
+                    <ul>
+                        <li>How to install and set up the platform</li>
+                        <li>Core concepts and terminology</li>
+                        <li>Best practices for development</li>
+                        <li>How to deploy your applications</li>
+                    </ul>
+
+                    <h2>Prerequisites</h2>
+                    <p>Before you begin, make sure you have:</p>
+                    <ul>
+                        <li>Node.js 16+ installed</li>
+                        <li>Basic knowledge of JavaScript</li>
+                        <li>A code editor (VS Code recommended)</li>
+                        <li>Git for version control</li>
+                    </ul>
+                </section>
+
+                <section id="installation">
+                    <h1>Installation</h1>
+                    <p>
+                        Installing our platform is straightforward. Follow these steps to get everything
+                        set up on your local machine.
+                    </p>
+
+                    <h2>npm Installation</h2>
+                    <p>The easiest way to install is via npm:</p>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Terminal</span>
+                            <button class="copy-btn" aria-label="Copy code">Copy</button>
+                        </div>
+                        <pre><code>npm install @platform/core
+npm install @platform/cli -g</code></pre>
+                    </div>
+
+                    <h2>Verify Installation</h2>
+                    <p>Check that everything is installed correctly:</p>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Terminal</span>
+                            <button class="copy-btn" aria-label="Copy code">Copy</button>
+                        </div>
+                        <pre><code>platform --version
+# Should output: 1.0.0</code></pre>
+                    </div>
+
+                    <div class="warning-box">
+                        <div class="warning-box-icon">⚠️</div>
+                        <div class="warning-box-content">
+                            <strong>Important:</strong> Make sure you're using Node.js version 16 or higher.
+                            Older versions are not supported.
+                        </div>
+                    </div>
+                </section>
+
+                <section id="quick-start">
+                    <h1>Quick Start</h1>
+                    <p>
+                        Get your first project up and running in less than 5 minutes with this
+                        step-by-step guide.
+                    </p>
+
+                    <h2>Create a New Project</h2>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Terminal</span>
+                            <button class="copy-btn" aria-label="Copy code">Copy</button>
+                        </div>
+                        <pre><code>platform create my-project
+cd my-project</code></pre>
+                    </div>
+
+                    <h2>Project Structure</h2>
+                    <p>Your new project will have the following structure:</p>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>File Structure</span>
+                        </div>
+                        <pre><code>my-project/
+├── src/
+│   ├── index.js
+│   └── components/
+├── public/
+├── package.json
+└── README.md</code></pre>
+                    </div>
+
+                    <h2>Start Development Server</h2>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Terminal</span>
+                            <button class="copy-btn" aria-label="Copy code">Copy</button>
+                        </div>
+                        <pre><code>npm start</code></pre>
+                    </div>
+
+                    <div class="success-box">
+                        <div class="success-box-icon">✓</div>
+                        <div class="success-box-content">
+                            Your development server is now running at <code>http://localhost:3000</code>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="configuration">
+                    <h1>Configuration</h1>
+                    <p>
+                        Customize your project settings using the configuration file. All options
+                        are documented below.
+                    </p>
+
+                    <h2>Configuration File</h2>
+                    <p>Create a <code>platform.config.js</code> file in your project root:</p>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>JavaScript</span>
+                            <button class="copy-btn" aria-label="Copy code">Copy</button>
+                        </div>
+                        <pre><code>module.exports = {
+  port: 3000,
+  environment: 'development',
+  features: {
+    analytics: true,
+    darkMode: true
+  }
+}</code></pre>
+                    </div>
+
+                    <h2>Available Options</h2>
+                    <table class="options-table">
+                        <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Type</th>
+                                <th>Default</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>port</code></td>
+                                <td>number</td>
+                                <td>3000</td>
+                                <td>Development server port</td>
+                            </tr>
+                            <tr>
+                                <td><code>environment</code></td>
+                                <td>string</td>
+                                <td>'development'</td>
+                                <td>Current environment</td>
+                            </tr>
+                            <tr>
+                                <td><code>features</code></td>
+                                <td>object</td>
+                                <td>{}</td>
+                                <td>Feature flags</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Footer Navigation -->
+                <nav class="page-navigation">
+                    <a href="#installation" class="page-nav-btn prev">
+                        <span class="arrow">←</span>
+                        <span>Installation</span>
+                    </a>
+                    <a href="#deployment" class="page-nav-btn next">
+                        <span>Deployment</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </nav>
+            </article>
+
+            <!-- Table of Contents -->
+            <aside class="toc">
+                <h4>On This Page</h4>
+                <nav class="toc-nav">
+                    <a href="#getting-started" class="toc-link active">Getting Started</a>
+                    <a href="#installation" class="toc-link">Installation</a>
+                    <a href="#quick-start" class="toc-link">Quick Start</a>
+                    <a href="#configuration" class="toc-link">Configuration</a>
+                </nav>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="content-footer">
+            <div class="footer-content">
+                <p>&copy; 2026 DevDocs. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">License</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

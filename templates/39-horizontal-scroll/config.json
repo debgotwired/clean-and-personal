@@ -1,0 +1,47 @@
+{
+  "name": "Horizontal Scroll",
+  "templateId": "39-horizontal-scroll",
+  "version": "1.0.0",
+  "description": "Left-to-right horizontal scrolling layout for unique navigation experience",
+  "style": {
+    "primary": "experimental-unique",
+    "colorScheme": "vibrant-gradient",
+    "typography": "modern-display",
+    "layout": "horizontal-scroll"
+  },
+  "bestFor": [
+    "Creative Agencies",
+    "Interactive Portfolios",
+    "Experimental Designs",
+    "Product Showcases",
+    "Storytelling Sites"
+  ],
+  "features": [
+    "Horizontal scrolling",
+    "Snap-to-section",
+    "Scroll indicators",
+    "Keyboard navigation",
+    "Touch swipe support",
+    "Section transitions",
+    "Progress bar"
+  ],
+  "colorPalette": {
+    "primary": "#8b5cf6",
+    "secondary": "#ec4899",
+    "accent": "#f59e0b",
+    "background": "#0f172a",
+    "text": "#f1f5f9"
+  },
+  "fonts": {
+    "heading": "Archivo Black",
+    "body": "Work Sans"
+  },
+  "sections": [
+    "intro",
+    "about",
+    "work-1",
+    "work-2",
+    "work-3",
+    "contact"
+  ]
+}

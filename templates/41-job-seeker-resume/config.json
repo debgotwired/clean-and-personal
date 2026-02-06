@@ -1,0 +1,17 @@
+{
+  "name": "Job Seeker Resume",
+  "templateId": "41-job-seeker-resume",
+  "version": "1.0.0",
+  "description": "ATS-friendly hire-me focused resume website with downloadable PDF and contact CTAs",
+  "style": {
+    "primary": "professional-clean",
+    "colorScheme": "corporate-trustworthy",
+    "typography": "readable-serif",
+    "layout": "resume-structured"
+  },
+  "bestFor": ["Job Seekers", "Career Changers", "Recent Graduates", "Professionals", "Freelancers"],
+  "features": ["ATS-optimized", "PDF download", "Skills matrix", "Experience timeline", "Education section", "Certifications", "References"],
+  "colorPalette": {"primary": "#2563eb", "secondary": "#64748b", "accent": "#10b981", "background": "#ffffff", "text": "#1e293b"},
+  "fonts": {"heading": "Libre Franklin", "body": "Libre Baskerville"},
+  "sections": ["hero", "summary", "experience", "education", "skills", "certifications", "contact"]
+}

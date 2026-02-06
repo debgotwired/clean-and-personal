@@ -1,0 +1,48 @@
+{
+  "name": "Illustrator",
+  "templateId": "29-illustrator",
+  "version": "1.0.0",
+  "description": "Visual-first portfolio for illustrators showcasing artwork in a beautiful gallery layout with lightbox functionality",
+  "style": {
+    "primary": "artistic-creative",
+    "colorScheme": "colorful-expressive",
+    "typography": "playful-artistic",
+    "layout": "masonry-gallery"
+  },
+  "bestFor": [
+    "Digital Illustrators",
+    "Traditional Artists",
+    "Character Designers",
+    "Editorial Illustrators",
+    "Concept Artists"
+  ],
+  "features": [
+    "Masonry gallery grid",
+    "Lightbox image viewer",
+    "Category filtering (editorial, character, etc.)",
+    "High-res image support",
+    "Art prints shop link",
+    "Commission info section",
+    "Social media integration"
+  ],
+  "colorPalette": {
+    "primary": "#e11d48",
+    "secondary": "#7c3aed",
+    "accent": "#f59e0b",
+    "background": "#ffffff",
+    "text": "#18181b"
+  },
+  "fonts": {
+    "heading": "Comfortaa",
+    "body": "Nunito"
+  },
+  "sections": [
+    "hero",
+    "gallery",
+    "about",
+    "process",
+    "commissions",
+    "shop",
+    "contact"
+  ]
+}

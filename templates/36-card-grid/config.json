@@ -1,0 +1,46 @@
+{
+  "name": "Card Grid",
+  "templateId": "36-card-grid",
+  "version": "1.0.0",
+  "description": "Pinterest-style card grid layout with masonry-inspired uniform cards and hover effects",
+  "style": {
+    "primary": "clean-modern",
+    "colorScheme": "soft-pastels",
+    "typography": "friendly-rounded",
+    "layout": "card-grid"
+  },
+  "bestFor": [
+    "Photographers",
+    "Designers",
+    "Artists",
+    "Curators",
+    "Visual Portfolios"
+  ],
+  "features": [
+    "Responsive card grid",
+    "Hover zoom effects",
+    "Category filtering",
+    "Lightbox gallery",
+    "Infinite scroll ready",
+    "Card animations",
+    "Mobile optimized"
+  ],
+  "colorPalette": {
+    "primary": "#ec4899",
+    "secondary": "#8b5cf6",
+    "accent": "#14b8a6",
+    "background": "#fafafa",
+    "text": "#1f2937"
+  },
+  "fonts": {
+    "heading": "Plus Jakarta Sans",
+    "body": "Inter"
+  },
+  "sections": [
+    "hero",
+    "filters",
+    "card-grid",
+    "about",
+    "contact"
+  ]
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scroll Portfolio | Experimental Design</title>
+    <meta name="description" content="Unique horizontal scrolling portfolio with snap-to-section navigation and experimental design">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">PORTFOLIO</div>
+        <div class="nav-dots">
+            <button class="dot active" data-section="0" aria-label="Go to section 1"></button>
+            <button class="dot" data-section="1" aria-label="Go to section 2"></button>
+            <button class="dot" data-section="2" aria-label="Go to section 3"></button>
+            <button class="dot" data-section="3" aria-label="Go to section 4"></button>
+            <button class="dot" data-section="4" aria-label="Go to section 5"></button>
+            <button class="dot" data-section="5" aria-label="Go to section 6"></button>
+        </div>
+        <div class="nav-counter">
+            <span class="current-section">01</span>
+            <span class="separator">/</span>
+            <span class="total-sections">06</span>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- Scroll Container -->
+    <div class="scroll-container" id="scroll-container">
+        <!-- Section 1: Intro -->
+        <section class="section section-1">
+            <div class="section-content">
+                <h1 class="hero-title">
+                    <span class="title-line">CREATIVE</span>
+                    <span class="title-line">DEVELOPER</span>
+                </h1>
+                <p class="hero-subtitle">Scroll right to explore →</p>
+            </div>
+            <div class="section-bg-pattern pattern-1"></div>
+        </section>
+
+        <!-- Section 2: About -->
+        <section class="section section-2">
+            <div class="section-content">
+                <div class="section-number">02</div>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-text">
+                    I'm a creative developer and digital designer passionate about pushing the
+                    boundaries of web experiences. Specializing in interactive design, WebGL,
+                    and experimental interfaces.
+                </p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-value">7+</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">100+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">50+</div>
+                        <div class="stat-label">Clients</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bg-pattern pattern-2"></div>
+        </section>
+
+        <!-- Section 3: Work 1 -->
+        <section class="section section-3">
+            <div class="section-content">
+                <div class="section-number">03</div>
+                <div class="work-showcase">
+                    <div class="work-image">
+                        <div class="work-placeholder" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">
+                            <span class="work-icon">🎨</span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h2 class="work-title">Immersive Web Experience</h2>
+                        <p class="work-description">
+                            Interactive 3D website using Three.js and GSAP. Features particle
+                            systems, smooth transitions, and responsive design.
+                        </p>
+                        <div class="work-tags">
+                            <span class="tag">Three.js</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">GSAP</span>
+                        </div>
+                        <a href="#" class="work-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bg-pattern pattern-3"></div>
+        </section>
+
+        <!-- Section 4: Work 2 -->
+        <section class="section section-4">
+            <div class="section-content">
+                <div class="section-number">04</div>
+                <div class="work-showcase">
+                    <div class="work-image">
+                        <div class="work-placeholder" style="background: linear-gradient(135deg, #f59e0b, #ec4899);">
+                            <span class="work-icon">💻</span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h2 class="work-title">Creative Agency Platform</h2>
+                        <p class="work-description">
+                            Full-stack platform for creative agencies with project management,
+                            client portals, and integrated billing system.
+                        </p>
+                        <div class="work-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="work-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bg-pattern pattern-4"></div>
+        </section>
+
+        <!-- Section 5: Work 3 -->
+        <section class="section section-5">
+            <div class="section-content">
+                <div class="section-number">05</div>
+                <div class="work-showcase">
+                    <div class="work-image">
+                        <div class="work-placeholder" style="background: linear-gradient(135deg, #14b8a6, #8b5cf6);">
+                            <span class="work-icon">🚀</span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h2 class="work-title">Product Launch Site</h2>
+                        <p class="work-description">
+                            High-impact product launch website with scroll-triggered animations,
+                            video integration, and conversion-optimized design.
+                        </p>
+                        <div class="work-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Animations</span>
+                            <span class="tag">Video</span>
+                        </div>
+                        <a href="#" class="work-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bg-pattern pattern-5"></div>
+        </section>
+
+        <!-- Section 6: Contact -->
+        <section class="section section-6">
+            <div class="section-content">
+                <div class="section-number">06</div>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-text contact-intro">
+                    Have an exciting project in mind? Let's create something amazing together.
+                </p>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span>Twitter</span>
+                    </a>
+                    <a href="mailto:hello@example.com" class="social-link">
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+            <div class="section-bg-pattern pattern-6"></div>
+        </section>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="nav-arrow nav-arrow-left" id="nav-left" aria-label="Previous section">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-arrow-right" id="nav-right" aria-label="Next section">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <!-- Keyboard Instructions (Hide after first interaction) -->
+    <div class="keyboard-hint" id="keyboard-hint">
+        <p>Use ← → arrow keys or scroll to navigate</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Open Source Maintainer",
+  "templateId": "50-open-source-maintainer",
+  "version": "1.0.0",
+  "description": "GitHub-focused developer portfolio for open source maintainers with project showcase and contribution stats",
+  "style": {
+    "primary": "developer-technical",
+    "colorScheme": "github-inspired",
+    "typography": "monospace-modern",
+    "layout": "project-grid"
+  },
+  "bestFor": ["Open Source Maintainers", "Library Authors", "Core Contributors", "Package Creators", "OSS Developers"],
+  "features": ["GitHub stats", "Project showcase", "Contribution graph", "Sponsors section", "Documentation links", "Community", "Changelog"],
+  "colorPalette": {"primary": "#2da44e", "secondary": "#1f2937", "accent": "#0969da", "background": "#0d1117", "text": "#c9d1d9"},
+  "fonts": {"heading": "JetBrains Mono", "body": "Inter"},
+  "sections": ["hero", "projects", "stats", "sponsors", "community", "blog", "contact"]
+}

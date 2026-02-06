@@ -1,0 +1,17 @@
+{
+  "name": "Link In Bio",
+  "templateId": "44-link-in-bio",
+  "version": "1.0.0",
+  "description": "Social hub landing page with stacked links, profile header, and social media connections",
+  "style": {
+    "primary": "social-friendly",
+    "colorScheme": "gradient-colorful",
+    "typography": "rounded-playful",
+    "layout": "centered-stack"
+  },
+  "bestFor": ["Influencers", "Content Creators", "Social Media Managers", "Creators", "Personal Brands"],
+  "features": ["Profile avatar", "Bio section", "Stacked link buttons", "Social icons", "Analytics ready", "Theme options", "Mobile-first"],
+  "colorPalette": {"primary": "#ec4899", "secondary": "#8b5cf6", "accent": "#14b8a6", "background": "#fafafa", "text": "#1f2937"},
+  "fonts": {"heading": "DM Sans", "body": "Inter"},
+  "sections": ["profile", "links", "social", "footer"]
+}

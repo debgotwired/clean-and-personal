@@ -1,0 +1,17 @@
+{
+  "name": "Newsletter Writer",
+  "templateId": "48-newsletter-writer",
+  "version": "1.0.0",
+  "description": "Substack-style newsletter writer portfolio with archive, signup form, and subscriber stats",
+  "style": {
+    "primary": "editorial-clean",
+    "colorScheme": "newsletter-minimal",
+    "typography": "substack-inspired",
+    "layout": "newsletter-centered"
+  },
+  "bestFor": ["Newsletter Writers", "Journalists", "Essayists", "Curators", "Analysts"],
+  "features": ["Newsletter archive", "Email signup", "Subscriber count", "Latest issues", "Topics covered", "About author", "Testimonials"],
+  "colorPalette": {"primary": "#f97316", "secondary": "#1e293b", "accent": "#10b981", "background": "#ffffff", "text": "#0f172a"},
+  "fonts": {"heading": "Charter", "body": "Inter"},
+  "sections": ["hero", "signup", "latest-issues", "archive", "about", "testimonials", "subscribe"]
+}

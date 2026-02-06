@@ -1,0 +1,48 @@
+{
+  "name": "Freelancer",
+  "templateId": "28-freelancer",
+  "version": "1.0.0",
+  "description": "Versatile portfolio for freelancers across disciplines, showcasing client work, availability, and diverse skills",
+  "style": {
+    "primary": "approachable-friendly",
+    "colorScheme": "warm-inviting",
+    "typography": "rounded-modern",
+    "layout": "flexible-grid"
+  },
+  "bestFor": [
+    "Freelance Designers",
+    "Freelance Developers",
+    "Freelance Writers",
+    "Freelance Consultants",
+    "Multi-discipline Freelancers"
+  ],
+  "features": [
+    "Client work showcase",
+    "Availability status",
+    "Hourly rate display",
+    "Skills & services grid",
+    "Client testimonials",
+    "Contact form",
+    "Project filtering"
+  ],
+  "colorPalette": {
+    "primary": "#8b5cf6",
+    "secondary": "#ec4899",
+    "accent": "#f59e0b",
+    "background": "#fafafa",
+    "text": "#1f2937"
+  },
+  "fonts": {
+    "heading": "Outfit",
+    "body": "Inter"
+  },
+  "sections": [
+    "hero",
+    "about",
+    "services",
+    "portfolio",
+    "testimonials",
+    "availability",
+    "contact"
+  ]
+}

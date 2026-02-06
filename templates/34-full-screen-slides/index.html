@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Presentation | Modern Slides</title>
+    <meta name="description" content="Presentation-style slides with keyboard navigation and smooth transitions">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Slide Counter -->
+    <div class="slide-counter" id="slideCounter">
+        <span class="current">1</span> / <span class="total">5</span>
+    </div>
+
+    <!-- Navigation Controls -->
+    <button class="nav-btn nav-prev" id="prevBtn" aria-label="Previous slide">
+        <span>←</span>
+    </button>
+    <button class="nav-btn nav-next" id="nextBtn" aria-label="Next slide">
+        <span>→</span>
+    </button>
+
+    <!-- Slides Container -->
+    <div class="slides-container" id="slidesContainer">
+        <!-- Slide 1: Title -->
+        <section class="slide slide-title active" data-slide="1">
+            <div class="slide-content">
+                <div class="slide-badge">Portfolio 2026</div>
+                <h1 class="slide-title">
+                    Building the<br>
+                    <span class="highlight">Future</span><br>
+                    of Digital
+                </h1>
+                <p class="slide-subtitle">
+                    Creative developer & designer crafting exceptional digital experiences
+                </p>
+                <button class="slide-cta" onclick="nextSlide()">
+                    Get Started →
+                </button>
+            </div>
+            <div class="slide-decoration">
+                <div class="decoration-circle"></div>
+                <div class="decoration-square"></div>
+            </div>
+        </section>
+
+        <!-- Slide 2: About -->
+        <section class="slide slide-about" data-slide="2">
+            <div class="slide-content">
+                <div class="content-split">
+                    <div class="split-left">
+                        <span class="slide-number">01</span>
+                        <h2 class="section-title">About Me</h2>
+                        <p class="section-text">
+                            I'm a creative developer passionate about building beautiful, functional,
+                            and user-friendly digital products. With 8+ years of experience, I specialize
+                            in turning complex problems into elegant solutions.
+                        </p>
+                        <div class="stats-row">
+                            <div class="stat">
+                                <div class="stat-value">150+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">50+</div>
+                                <div class="stat-label">Clients</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">8+</div>
+                                <div class="stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="split-right">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-icon">⚛️</span>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🎨</span>
+                                <span>Design</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">📱</span>
+                                <span>Mobile</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🚀</span>
+                                <span>Performance</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">☁️</span>
+                                <span>Cloud</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🔧</span>
+                                <span>DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Work -->
+        <section class="slide slide-work" data-slide="3">
+            <div class="slide-content">
+                <div class="content-centered">
+                    <span class="slide-number">02</span>
+                    <h2 class="section-title">Featured Work</h2>
+                    <div class="work-showcase">
+                        <div class="showcase-main">
+                            <div class="project-image">🚀</div>
+                            <h3>SaaS Platform Redesign</h3>
+                            <p>Complete UX overhaul resulting in 200% increase in user engagement</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                        <div class="showcase-secondary">
+                            <div class="project-card">
+                                <div class="project-icon">📱</div>
+                                <h4>Mobile App</h4>
+                                <p>Award-winning iOS app</p>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-icon">🎨</div>
+                                <h4>Brand Identity</h4>
+                                <p>Complete brand system</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Process -->
+        <section class="slide slide-process" data-slide="4">
+            <div class="slide-content">
+                <div class="content-full">
+                    <span class="slide-number">03</span>
+                    <h2 class="section-title">My Process</h2>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h3>Discover</h3>
+                            <p>Understanding goals, users, and challenges</p>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h3>Design</h3>
+                            <p>Creating intuitive and beautiful interfaces</p>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h3>Develop</h3>
+                            <p>Building with modern technologies</p>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <h3>Deliver</h3>
+                            <p>Launching and iterating for success</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Contact -->
+        <section class="slide slide-contact" data-slide="5">
+            <div class="slide-content">
+                <div class="content-centered">
+                    <span class="slide-number">04</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="contact-text">
+                        Have a project in mind? I'm always open to discussing new opportunities
+                        and creative collaborations.
+                    </p>
+                    <div class="contact-options">
+                        <a href="mailto:hello@example.com" class="contact-btn">
+                            <span class="btn-icon">📧</span>
+                            <span>Email Me</span>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                            <span class="btn-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                            <span class="btn-icon">🐙</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <div class="contact-footer">
+                        <p>&copy; 2026 All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Slide Dots Navigation -->
+    <div class="slide-dots" id="slideDots"></div>
+
+    <!-- Speaker Notes Toggle (for development) -->
+    <button class="notes-toggle" id="notesToggle" aria-label="Toggle speaker notes" title="Toggle speaker notes">
+        <span>📝</span>
+    </button>
+
+    <!-- Speaker Notes Panel -->
+    <div class="speaker-notes" id="speakerNotes">
+        <div class="notes-content" id="notesContent">
+            <h4>Speaker Notes</h4>
+            <p>Press N to toggle notes. Use arrow keys to navigate slides.</p>
+        </div>
+    </div>
+
+    <!-- Keyboard Shortcuts Help -->
+    <div class="shortcuts-help" id="shortcutsHelp">
+        <h4>Keyboard Shortcuts</h4>
+        <div class="shortcut-list">
+            <div class="shortcut-item">
+                <kbd>→</kbd><kbd>↓</kbd><kbd>Space</kbd>
+                <span>Next slide</span>
+            </div>
+            <div class="shortcut-item">
+                <kbd>←</kbd><kbd>↑</kbd>
+                <span>Previous slide</span>
+            </div>
+            <div class="shortcut-item">
+                <kbd>Home</kbd>
+                <span>First slide</span>
+            </div>
+            <div class="shortcut-item">
+                <kbd>End</kbd>
+                <span>Last slide</span>
+            </div>
+            <div class="shortcut-item">
+                <kbd>N</kbd>
+                <span>Toggle notes</span>
+            </div>
+            <div class="shortcut-item">
+                <kbd>?</kbd>
+                <span>This help</span>
+            </div>
+        </div>
+        <button class="close-help" onclick="toggleHelp()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

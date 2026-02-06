@@ -1,0 +1,48 @@
+{
+  "name": "Animator",
+  "templateId": "30-animator",
+  "version": "1.0.0",
+  "description": "Motion-focused portfolio for animators with video showreels, project breakdowns, and animation process showcase",
+  "style": {
+    "primary": "dynamic-motion",
+    "colorScheme": "vibrant-animated",
+    "typography": "modern-bold",
+    "layout": "video-grid"
+  },
+  "bestFor": [
+    "Motion Designers",
+    "3D Animators",
+    "2D Animators",
+    "VFX Artists",
+    "Motion Graphics Designers"
+  ],
+  "features": [
+    "Video showreel embed",
+    "Project video grid",
+    "Animation process breakdown",
+    "Software & tools showcase",
+    "Client list",
+    "Availability status",
+    "Animated UI elements"
+  ],
+  "colorPalette": {
+    "primary": "#06b6d4",
+    "secondary": "#8b5cf6",
+    "accent": "#f472b6",
+    "background": "#0f172a",
+    "text": "#f1f5f9"
+  },
+  "fonts": {
+    "heading": "Space Grotesk",
+    "body": "Inter"
+  },
+  "sections": [
+    "hero",
+    "showreel",
+    "projects",
+    "process",
+    "skills",
+    "clients",
+    "contact"
+  ]
+}

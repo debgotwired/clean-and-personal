@@ -1,0 +1,47 @@
+{
+  "name": "Magazine Layout",
+  "templateId": "35-magazine-layout",
+  "version": "1.0.0",
+  "description": "Editorial-style magazine layout with featured articles, grid system, and rich typography",
+  "style": {
+    "primary": "editorial-elegant",
+    "colorScheme": "black-white-red",
+    "typography": "serif-editorial",
+    "layout": "magazine-grid"
+  },
+  "bestFor": [
+    "Writers",
+    "Journalists",
+    "Content Creators",
+    "Publishers",
+    "Editorial Portfolios"
+  ],
+  "features": [
+    "Featured article hero",
+    "Multi-column grid",
+    "Pull quotes",
+    "Drop caps",
+    "Image captions",
+    "Article categories",
+    "Reading time estimates"
+  ],
+  "colorPalette": {
+    "primary": "#dc2626",
+    "secondary": "#1f2937",
+    "accent": "#f59e0b",
+    "background": "#ffffff",
+    "text": "#111827"
+  },
+  "fonts": {
+    "heading": "Playfair Display",
+    "body": "Lora"
+  },
+  "sections": [
+    "header",
+    "featured-article",
+    "article-grid",
+    "categories",
+    "about",
+    "footer"
+  ]
+}

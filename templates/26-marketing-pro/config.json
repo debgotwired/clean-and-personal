@@ -1,0 +1,48 @@
+{
+  "name": "Marketing Pro",
+  "templateId": "26-marketing-pro",
+  "version": "1.0.0",
+  "description": "Campaign-focused portfolio for marketing professionals showcasing successful campaigns, metrics, and case studies",
+  "style": {
+    "primary": "bold-confident",
+    "colorScheme": "vibrant-energetic",
+    "typography": "modern-sans",
+    "layout": "campaign-grid"
+  },
+  "bestFor": [
+    "Marketing Managers",
+    "Digital Marketers",
+    "Growth Marketers",
+    "Marketing Directors",
+    "CMOs"
+  ],
+  "features": [
+    "Campaign case studies with metrics",
+    "Before/after results showcase",
+    "Skills & tools proficiency",
+    "Client testimonials",
+    "Animated metric counters",
+    "Filterable campaign grid",
+    "Dark mode support"
+  ],
+  "colorPalette": {
+    "primary": "#ff6b35",
+    "secondary": "#004e89",
+    "accent": "#f7931e",
+    "background": "#ffffff",
+    "text": "#1a1a1a"
+  },
+  "fonts": {
+    "heading": "Poppins",
+    "body": "Inter"
+  },
+  "sections": [
+    "hero",
+    "about",
+    "campaigns",
+    "metrics",
+    "skills",
+    "testimonials",
+    "contact"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Podcast Host",
+  "templateId": "47-podcast-host",
+  "version": "1.0.0",
+  "description": "Podcast showcase with episode player, guest list, and subscription links",
+  "style": {
+    "primary": "audio-focused",
+    "colorScheme": "podcast-vibrant",
+    "typography": "modern-readable",
+    "layout": "episode-grid"
+  },
+  "bestFor": ["Podcast Hosts", "Audio Creators", "Interviewers", "Radio Hosts", "Content Creators"],
+  "features": ["Audio player", "Episode grid", "Guest showcase", "Subscribe buttons", "Transcripts", "Clips", "Sponsor section"],
+  "colorPalette": {"primary": "#8b5cf6", "secondary": "#ec4899", "accent": "#f59e0b", "background": "#0f172a", "text": "#f1f5f9"},
+  "fonts": {"heading": "Space Grotesk", "body": "Inter"},
+  "sections": ["hero", "latest-episode", "all-episodes", "about", "guests", "subscribe", "sponsors"]
+}
