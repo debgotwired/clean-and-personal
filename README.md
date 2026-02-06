@@ -43,58 +43,73 @@ Build your personal website in minutes with Claude's help. No coding required (b
 
 ## 🚀 Quick Start
 
-### Option 1: Use Claude (Easiest)
+### 1. Clone the Repository
 
-1. **Fork this repo**
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/clean-and-personal.git
-   cd clean-and-personal
-   ```
+```bash
+git clone https://github.com/debgotwired/clean-and-personal.git
+cd clean-and-personal
+```
 
-2. **Start Claude Code**
+### 2. Choose Your Approach
+
+#### Option A: Use Claude (Easiest)
+
+1. **Start Claude Code**
    ```bash
    claude
    ```
 
-3. **Use the skill**
+2. **Use the skill**
    ```
    /website-builder
    ```
 
-4. **Tell Claude what you want**
+3. **Tell Claude what you want**
    ```
    I'm a software engineer, want a dark mode portfolio
    ```
 
-5. **Upload your data** (optional)
+4. **Upload your data** (optional)
    - Drag and drop your LinkedIn PDF
    - Or resume
    - Or just type your info
 
-6. **Claude builds it for you!**
+5. **Claude builds it for you!**
    - Picks the right template
    - Customizes with your info
    - Helps you deploy
 
-### Option 2: Manual Setup
+#### Option B: Manual Setup
 
-1. **Choose a template**
+1. **Browse templates**
+   - Open `index.html` in your browser to see all 50 templates
+   - Or explore the `templates/` directory
+
+2. **Choose a template**
    ```bash
    cd templates/01-founder  # or whichever you like
    ```
 
-2. **Edit index.html**
+3. **Edit index.html**
    - Update your name, bio, links
    - Add your work experience
    - Customize sections
 
-3. **Customize styles.css** (optional)
-   - Change colors
+4. **Customize styles.css** (optional)
+   - Change colors in CSS variables
    - Modify fonts
    - Adjust layout
 
-4. **Deploy**
+5. **Deploy**
    - See [Deployment Guide](docs/DEPLOYMENT.md)
+
+### 3. Deploy to Vercel (Optional)
+
+Click the button below for one-click deployment:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/debgotwired/clean-and-personal)
+
+Or follow the [Deployment Guide](docs/DEPLOYMENT.md) for other hosting options.
 
 ## 📚 All 50 Templates
 
