@@ -1,6 +1,6 @@
 # Clean and Personal
 
-**Open source personal website builder with 10 clean, text-based templates.**
+**Open source personal website builder with 50+ clean, text-based templates.**
 
 Build your personal website in minutes with Claude's help. No coding required (but you can customize everything if you want).
 
@@ -80,7 +80,7 @@ Build your personal website in minutes with Claude's help. No coding required (b
 4. **Deploy**
    - See [Deployment Guide](docs/DEPLOYMENT.md)
 
-## 📚 Templates
+## 📚 Example Templates
 
 ### 1. Founder
 **Style:** Professional, light green gradient
