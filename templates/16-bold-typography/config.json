@@ -1,0 +1,8 @@
+{
+  "name": "Bold Typography Template",
+  "description": "Type-first design where typography is the hero",
+  "colors": {"primary": "#000000", "accent": "#ff0000"},
+  "fonts": {"primary": "Fraunces"},
+  "sections": ["hero", "about", "work", "contact"],
+  "features": ["Massive headlines", "Variable fonts", "High contrast", "Type-driven layout", "Minimal imagery"]
+}

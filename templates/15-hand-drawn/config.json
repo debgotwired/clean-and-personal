@@ -1,0 +1,8 @@
+{
+  "name": "Hand-Drawn Template",
+  "description": "Sketchy, imperfect, human-made aesthetic - anti-AI design",
+  "colors": {"primary": "#1a1a1a", "accent": "#ff6b6b"},
+  "fonts": {"primary": "Caveat", "body": "Inter"},
+  "sections": ["hero", "about", "work", "contact"],
+  "features": ["Hand-drawn borders", "Sketchy effects", "Doodle decorations", "Paper texture", "Rough shapes", "Human touch"]
+}

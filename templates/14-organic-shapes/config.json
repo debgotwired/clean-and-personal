@@ -1,0 +1,8 @@
+{
+  "name": "Organic Shapes Template",
+  "description": "Flowing natural forms with smooth curves and blob shapes",
+  "colors": {"primary": "#8b5cf6", "secondary": "#ec4899"},
+  "fonts": {"primary": "Outfit"},
+  "sections": ["hero", "about", "work", "contact"],
+  "features": ["SVG blob shapes", "Organic layouts", "Asymmetric design", "Smooth curves", "Nature-inspired", "Mobile responsive"]
+}

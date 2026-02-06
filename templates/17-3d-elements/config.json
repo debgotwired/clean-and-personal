@@ -1,0 +1,8 @@
+{
+  "name": "3D Elements Template",
+  "description": "Subtle 3D depth with modern shadows and dimensional effects",
+  "colors": {"primary": "#6366f1", "shadow": "#1e293b"},
+  "fonts": {"primary": "Inter"},
+  "sections": ["hero", "about", "work", "contact"],
+  "features": ["CSS 3D transforms", "Layered depth", "Card tilt effects", "Parallax scrolling", "Multi-level shadows"]
+}

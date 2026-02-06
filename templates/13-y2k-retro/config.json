@@ -1,0 +1,16 @@
+{
+  "name": "Y2K Retro Template",
+  "description": "Nostalgic 90s/2000s aesthetic with chrome effects, neon colors, and retro vibes",
+  "colors": {
+    "chrome": "linear-gradient(135deg, #c0c0c0, #e8e8e8, #9e9e9e)",
+    "neon-blue": "#00d9ff",
+    "neon-pink": "#ff0080",
+    "neon-purple": "#b300ff"
+  },
+  "fonts": {
+    "primary": "Space Grotesk",
+    "accent": "Orbitron"
+  },
+  "sections": ["hero", "about", "work", "timeline", "contact"],
+  "features": ["Chrome text effects", "Neon colors", "Animated stars", "Gradient buttons", "Retro badges", "Visitor counter", "Mobile responsive", "Scroll animations"]
+}
