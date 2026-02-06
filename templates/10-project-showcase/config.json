@@ -1,0 +1,26 @@
+{
+  "name": "Project Showcase Template",
+  "description": "Developer-focused card layout for showcasing projects, tools, and experiments",
+  "colors": {
+    "primary": "#3b82f6",
+    "secondary": "#8b5cf6",
+    "accent": "#10b981",
+    "text": "#0f172a"
+  },
+  "fonts": {
+    "primary": "Inter",
+    "code": "JetBrains Mono"
+  },
+  "sections": ["hero", "projects", "skills", "about"],
+  "features": [
+    "Filterable project grid",
+    "Project cards with stats",
+    "Tech stack tags",
+    "GitHub integration ready",
+    "Skills categorization",
+    "Scroll animations",
+    "Mobile responsive",
+    "Dark mode",
+    "Code font support"
+  ]
+}

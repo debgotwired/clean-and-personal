@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Project Showcase</title>
+    <meta name="description" content="Developer and maker showcasing cool projects and experiments">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span>Your Name</span>
+            </a>
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="https://github.com/you" class="github-link" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>
+                        Building cool stuff<br>
+                        <span class="gradient-text">one project at a time</span>
+                    </h1>
+                    <p class="hero-description">
+                        Developer & maker passionate about open source, web technologies, and building
+                        products that solve real problems. Check out what I've been working on.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15k+</span>
+                            <span class="stat-label">GitHub Stars</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100k+</span>
+                            <span class="stat-label">Downloads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <div class="filter-tags">
+                        <button class="tag active" data-filter="all">All</button>
+                        <button class="tag" data-filter="web">Web Apps</button>
+                        <button class="tag" data-filter="tools">Dev Tools</button>
+                        <button class="tag" data-filter="library">Libraries</button>
+                        <button class="tag" data-filter="experiment">Experiments</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card featured" data-category="web">
+                        <div class="project-header">
+                            <div class="project-icon">🚀</div>
+                            <div class="project-meta">
+                                <span class="tag-label">Web App</span>
+                                <span class="featured-badge">★ Featured</span>
+                            </div>
+                        </div>
+                        <h3>TaskFlow Pro</h3>
+                        <p>AI-powered task management app with smart scheduling and natural language input. Built with React, Node.js, and OpenAI API.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>OpenAI</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⭐ 2.3k</span>
+                            <span>🔱 450 forks</span>
+                            <span>📦 10k+ users</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/you/taskflow" class="btn btn-secondary">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://taskflow.demo.com" class="btn btn-primary">
+                                Live Demo →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="tools">
+                        <div class="project-header">
+                            <div class="project-icon">🛠️</div>
+                            <div class="project-meta">
+                                <span class="tag-label">Dev Tool</span>
+                            </div>
+                        </div>
+                        <h3>DevTools CLI</h3>
+                        <p>Command-line toolkit for modern web development. Scaffolding, linting, testing, and deployment in one tool.</p>
+                        <div class="tech-stack">
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                            <span>Commander</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⭐ 1.2k</span>
+                            <span>📦 50k+ downloads</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/you/devtools-cli" class="btn btn-secondary">Code</a>
+                            <a href="https://npmjs.com/package/devtools-cli" class="btn btn-secondary">NPM</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="library">
+                        <div class="project-header">
+                            <div class="project-icon">📚</div>
+                            <div class="project-meta">
+                                <span class="tag-label">Library</span>
+                            </div>
+                        </div>
+                        <h3>React Animations</h3>
+                        <p>Lightweight animation library for React with 50+ pre-built animations. Zero dependencies, tree-shakeable.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⭐ 890</span>
+                            <span>📦 30k+ weekly downloads</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/you/react-animations" class="btn btn-secondary">Code</a>
+                            <a href="https://react-animations.dev" class="btn btn-secondary">Docs</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web">
+                        <div class="project-header">
+                            <div class="project-icon">🎨</div>
+                            <div class="project-meta">
+                                <span class="tag-label">Web App</span>
+                            </div>
+                        </div>
+                        <h3>ColorPalette AI</h3>
+                        <p>Generate beautiful color palettes using AI. Export to CSS, Tailwind, Figma, and more.</p>
+                        <div class="tech-stack">
+                            <span>Next.js</span>
+                            <span>TailwindCSS</span>
+                            <span>OpenAI</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⭐ 650</span>
+                            <span>📦 5k+ users</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/you/colorpalette-ai" class="btn btn-secondary">Code</a>
+                            <a href="https://colorpalette.ai" class="btn btn-primary">Try It →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="experiment">
+                        <div class="project-header">
+                            <div class="project-icon">🧪</div>
+                            <div class="project-meta">
+                                <span class="tag-label">Experiment</span>
+                            </div>
+                        </div>
+                        <h3>WebGL Particles</h3>
+                        <p>Interactive particle system experiment using WebGL and custom shaders. 100k+ particles at 60fps.</p>
+                        <div class="tech-stack">
+                            <span>WebGL</span>
+                            <span>GLSL</span>
+                            <span>Three.js</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⭐ 320</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/you/webgl-particles" class="btn btn-secondary">Code</a>
+                            <a href="https://particles.demo.com" class="btn btn-primary">Demo →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="tools">
+                        <div class="project-header">
+                            <div class="project-icon">⚙️</div>
+                            <div class="project-meta">
+                                <span class="tag-label">Dev Tool</span>
+                            </div>
+                        </div>
+                        <h3>API Tester</h3>
+                        <p>Beautiful API testing tool with collections, environments, and collaboration features. Postman alternative.</p>
+                        <div class="tech-stack">
+                            <span>Electron</span>
+                            <span>React</span>
+                            <span>IndexedDB</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⭐ 540</span>
+                            <span>📦 15k+ downloads</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/you/api-tester" class="btn btn-secondary">Code</a>
+                            <a href="#download" class="btn btn-secondary">Download</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="more-projects">
+                    <p>Want to see more? Check out my <a href="https://github.com/you">GitHub profile</a> for 50+ projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Technologies & Tools</h2>
+                <p class="section-description">Tools I use to bring ideas to life</p>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>TailwindCSS</span>
+                            <span>Vue.js</span>
+                            <span>Svelte</span>
+                            <span>WebGL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>Go</span>
+                            <span>PostgreSQL</span>
+                            <span>MongoDB</span>
+                            <span>Redis</span>
+                            <span>GraphQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Tools</h3>
+                        <div class="skill-tags">
+                            <span>Docker</span>
+                            <span>AWS</span>
+                            <span>Vercel</span>
+                            <span>GitHub Actions</span>
+                            <span>Terraform</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Other</h3>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>Figma</span>
+                            <span>OpenAI API</span>
+                            <span>REST APIs</span>
+                            <span>Testing (Jest, Cypress)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p class="large">
+                        I'm a full-stack developer who loves building things and sharing them with the world.
+                    </p>
+                    <p>
+                        Started coding in 2015 and haven't stopped since. I believe in learning by building,
+                        which is why I have dozens of projects on GitHub - some successful, many experimental,
+                        all educational.
+                    </p>
+                    <p>
+                        My open source work has been used by thousands of developers around the world. I'm
+                        passionate about developer tools, web performance, and making the web more accessible.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me writing technical articles, contributing to open
+                        source, or exploring new technologies.
+                    </p>
+                    <div class="about-links">
+                        <a href="mailto:hello@yourname.com" class="btn btn-primary">Get in Touch</a>
+                        <a href="/resume.pdf" class="btn btn-secondary">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>© 2026 Your Name</p>
+                    <p class="footer-tagline">Building in public, one commit at a time</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/you">GitHub</a>
+                    <a href="https://twitter.com/you">Twitter</a>
+                    <a href="https://linkedin.com/in/you">LinkedIn</a>
+                    <a href="/blog">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

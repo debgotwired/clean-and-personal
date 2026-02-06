@@ -1,0 +1,24 @@
+{
+  "name": "Startup Template",
+  "description": "Bold, achievement-oriented design for startup founders showcasing traction and growth",
+  "colors": {
+    "primary": "#6366f1",
+    "secondary": "#8b5cf6",
+    "success": "#10b981",
+    "text": "#0f172a"
+  },
+  "fonts": {
+    "primary": "Inter"
+  },
+  "sections": ["hero", "traction", "mission", "product", "team", "contact"],
+  "features": [
+    "Animated metrics counters",
+    "Traction showcase",
+    "Team profiles",
+    "Product features grid",
+    "Contact form",
+    "Scroll animations",
+    "Mobile responsive",
+    "Dark mode"
+  ]
+}

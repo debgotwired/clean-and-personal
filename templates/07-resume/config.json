@@ -1,0 +1,8 @@
+{
+  "name": "Resume Template",
+  "description": "Professional one-page CV layout",
+  "colors": { "primary": "#2563eb" },
+  "fonts": { "primary": "Inter" },
+  "sections": ["summary", "experience", "education", "skills", "projects"],
+  "features": ["Print-friendly", "ATS-compatible", "One-page layout"]
+}

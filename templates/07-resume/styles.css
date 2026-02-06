@@ -1,0 +1,194 @@
+/* Resume Template - Professional CV Layout */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --primary: #2563eb;
+    --text: #1f2937;
+    --text-light: #6b7280;
+    --border: #e5e7eb;
+    --bg: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    padding: 2rem;
+}
+
+.resume {
+    max-width: 850px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.resume-header {
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.contact a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+/* Summary */
+.summary p {
+    line-height: 1.7;
+}
+
+/* Experience & Education */
+.job, .degree {
+    margin-bottom: 2rem;
+}
+
+.job:last-child, .degree:last-child {
+    margin-bottom: 0;
+}
+
+.job-header, .degree-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.company, .school {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.dates {
+    color: var(--text-light);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.4rem;
+    position: relative;
+}
+
+li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.skill-category h4 {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--text);
+}
+
+.skill-category p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 1.5rem;
+}
+
+.project h3 {
+    margin-bottom: 0.3rem;
+}
+
+.project p {
+    color: var(--text-light);
+}
+
+/* Print Styles */
+@media print {
+    body {
+        padding: 0;
+        background: white;
+    }
+    .resume {
+        box-shadow: none;
+        padding: 0;
+    }
+    a {
+        color: var(--text);
+        text-decoration: none;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body { padding: 1rem; }
+    .resume { padding: 2rem 1.5rem; }
+    h1 { font-size: 2rem; }
+    .job-header, .degree-header { flex-direction: column; }
+    .dates { margin-top: 0.3rem; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .contact { flex-direction: column; align-items: center; }
+}

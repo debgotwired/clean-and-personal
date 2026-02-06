@@ -1,0 +1,25 @@
+{
+  "name": "Creative Portfolio Template",
+  "description": "Visual-first design for designers, photographers, and artists showcasing creative work",
+  "colors": {
+    "primary": "#667eea",
+    "text": "#1a1a1a",
+    "bg": "#ffffff"
+  },
+  "fonts": {
+    "primary": "Inter",
+    "heading": "Playfair Display"
+  },
+  "sections": ["hero", "portfolio", "testimonials", "about", "contact"],
+  "features": [
+    "Portfolio grid with filtering",
+    "Visual-first layout",
+    "Testimonials section",
+    "About with stats",
+    "Contact form",
+    "Scroll animations",
+    "Mobile responsive",
+    "Dark mode",
+    "Elegant typography"
+  ]
+}

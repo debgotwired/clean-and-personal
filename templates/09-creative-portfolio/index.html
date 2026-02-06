@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Creative Portfolio</title>
+    <meta name="description" content="Portfolio of creative work - design, photography, and visual storytelling">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Your Name</a>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">
+                    Visual Storyteller<br>
+                    <span class="hero-subtitle">& Creative Director</span>
+                </h1>
+                <p class="hero-tagline">
+                    Crafting memorable experiences through design, photography, and art.
+                </p>
+                <a href="#work" class="hero-cta">View My Work ↓</a>
+            </div>
+        </section>
+
+        <section id="work" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Selected Work</h2>
+                    <div class="filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="branding">Branding</button>
+                        <button class="filter-btn" data-filter="photography">Photography</button>
+                        <button class="filter-btn" data-filter="web">Web Design</button>
+                        <button class="filter-btn" data-filter="illustration">Illustration</button>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <article class="gallery-item" data-category="branding">
+                        <div class="item-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="item-placeholder">Brand Identity</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Lumina Coffee Co.</h3>
+                            <p>Complete brand identity for artisan coffee roaster</p>
+                            <span class="item-category">Branding</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="photography">
+                        <div class="item-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="item-placeholder">Photography</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Urban Landscapes</h3>
+                            <p>Editorial photo series exploring city architecture</p>
+                            <span class="item-category">Photography</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="web">
+                        <div class="item-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="item-placeholder">Web Design</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>TechFlow Platform</h3>
+                            <p>SaaS product design and interface system</p>
+                            <span class="item-category">Web Design</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="branding">
+                        <div class="item-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <div class="item-placeholder">Brand Identity</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Bloom Wellness</h3>
+                            <p>Health & wellness brand identity and packaging</p>
+                            <span class="item-category">Branding</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="illustration">
+                        <div class="item-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <div class="item-placeholder">Illustration</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Future Cities</h3>
+                            <p>Conceptual illustration series for tech magazine</p>
+                            <span class="item-category">Illustration</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="web">
+                        <div class="item-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <div class="item-placeholder">Web Design</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Portfolio Studio</h3>
+                            <p>Artist portfolio website with custom CMS</p>
+                            <span class="item-category">Web Design</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="photography">
+                        <div class="item-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <div class="item-placeholder">Photography</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Natural Beauty</h3>
+                            <p>Product photography for organic skincare brand</p>
+                            <span class="item-category">Photography</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="illustration">
+                        <div class="item-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <div class="item-placeholder">Illustration</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Character Design</h3>
+                            <p>Character illustrations for mobile game</p>
+                            <span class="item-category">Illustration</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="branding">
+                        <div class="item-image" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);">
+                            <div class="item-placeholder">Brand Identity</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Metro Transit</h3>
+                            <p>Rebranding initiative for city transportation</p>
+                            <span class="item-category">Branding</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Clients Say</h2>
+                <div class="testimonial-grid">
+                    <blockquote class="testimonial">
+                        <p>"Exceptional work. The branding exceeded all our expectations and perfectly captured our vision."</p>
+                        <cite>
+                            <strong>Sarah Mitchell</strong>
+                            <span>CEO, Lumina Coffee Co.</span>
+                        </cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"A true creative talent. Their photography brought our products to life in ways we never imagined."</p>
+                        <cite>
+                            <strong>David Park</strong>
+                            <span>Marketing Director, Bloom Wellness</span>
+                        </cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Professional, creative, and incredibly easy to work with. Delivered beyond what we asked for."</p>
+                        <cite>
+                            <strong>Emily Chen</strong>
+                            <span>Product Lead, TechFlow</span>
+                        </cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span>Your Photo</span>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p class="lead">
+                            I'm a visual storyteller with 10+ years of experience creating compelling
+                            brand identities, photography, and digital experiences.
+                        </p>
+                        <p>
+                            My work has been featured in Communication Arts, Design Week, and Adobe's
+                            Creative Cloud showcase. I've had the privilege of working with startups,
+                            Fortune 500 companies, and everyone in between.
+                        </p>
+                        <p>
+                            When I'm not designing, you'll find me exploring new cities with my camera,
+                            teaching design workshops, or experimenting with analog photography.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">15</div>
+                                <div class="stat-label">Awards Won</div>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                            <a href="/resume.pdf" class="btn btn-secondary">Download Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Get in Touch</h2>
+                    <p class="lead">
+                        Have a project in mind? Let's talk about how we can bring your vision to life.
+                    </p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Project Type</label>
+                            <select id="project" name="project" required>
+                                <option value="">Select one...</option>
+                                <option value="branding">Branding & Identity</option>
+                                <option value="photography">Photography</option>
+                                <option value="web">Web Design</option>
+                                <option value="illustration">Illustration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell me about your project</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Email</strong>
+                            <a href="mailto:hello@yourname.com">hello@yourname.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location</strong>
+                            <span>San Francisco, CA</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Follow</strong>
+                            <div class="social-links">
+                                <a href="https://instagram.com/you" aria-label="Instagram">Instagram</a>
+                                <a href="https://behance.net/you" aria-label="Behance">Behance</a>
+                                <a href="https://dribbble.com/you" aria-label="Dribbble">Dribbble</a>
+                                <a href="https://linkedin.com/in/you" aria-label="LinkedIn">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Your Name. All rights reserved.</p>
+            <p class="footer-note">Designed & developed with care</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
