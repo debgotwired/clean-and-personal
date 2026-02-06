@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Organic Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">YN</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Creative Designer<br><span>& Art Director</span></h1>
+                    <p>Crafting organic experiences that flow naturally</p>
+                    <a href="#work" class="btn">View Work</a>
+                </div>
+                <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#8b5cf6" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.4,90,-15.7,88.5,-0.1C87,15.4,81.4,30.8,72.8,43.8C64.2,56.8,52.6,67.3,38.8,74.6C25,81.9,9,86,-6.3,85.5C-21.6,85,-43.2,79.9,-58.5,70.2C-73.8,60.5,-82.8,46.2,-87.3,30.8C-91.8,15.4,-91.8,-1.1,-87.3,-16.4C-82.8,-31.7,-73.8,-45.7,-61.9,-54.3C-50,-62.9,-35.2,-65.9,-20.8,-71.7C-6.4,-77.6,7.7,-86.2,22.4,-87.3C37.1,-88.4,52.4,-81.9,44.7,-76.4Z" transform="translate(100 100)" />
+                </svg>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I believe design should feel natural and intuitive, like the organic shapes found in nature.</p>
+            </div>
+        </section>
+        <section id="work" class="work">
+            <div class="container">
+                <h2>Selected Work</h2>
+                <div class="work-grid">
+                    <article class="work-item"><div class="work-blob"></div><h3>Project One</h3></article>
+                    <article class="work-item"><div class="work-blob"></div><h3>Project Two</h3></article>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

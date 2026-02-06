@@ -1,0 +1,26 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: #1a1a1a; background: #ffffff; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+header { padding: 1.5rem 0; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; background: white; z-index: 1000; }
+header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: #6366f1; }
+nav { display: flex; gap: 2rem; }
+nav a { text-decoration: none; color: #64748b; font-weight: 500; transition: color 0.3s; }
+nav a:hover { color: #6366f1; }
+section { padding: 5rem 0; }
+.hero { text-align: center; padding: 6rem 0; }
+h1 { font-size: 4rem; font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem; }
+h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem; }
+h3 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem; }
+p { font-size: 1.125rem; color: #64748b; margin-bottom: 1.5rem; }
+.btn { display: inline-block; padding: 1rem 2rem; background: #6366f1; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s; border: none; cursor: pointer; font-size: 1rem; }
+.btn:hover { background: #4f46e5; transform: translateY(-2px); }
+.work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.work-item { background: #f8fafc; padding: 1.5rem; border-radius: 12px; transition: all 0.3s; }
+.work-item:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.work-image { width: 100%; height: 200px; background: linear-gradient(135deg, #6366f1, #8b5cf6); border-radius: 8px; margin-bottom: 1rem; }
+.contact-form { display: flex; flex-direction: column; gap: 1rem; max-width: 600px; margin: 0 auto; }
+.contact-form input, .contact-form textarea { padding: 1rem; border: 1px solid #e5e7eb; border-radius: 8px; font-family: inherit; font-size: 1rem; }
+.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: #6366f1; }
+footer { padding: 3rem 0; border-top: 1px solid #e5e7eb; text-align: center; color: #64748b; }
+@media (max-width: 768px) { h1 { font-size: 2.5rem; } .work-grid { grid-template-columns: 1fr; } }
