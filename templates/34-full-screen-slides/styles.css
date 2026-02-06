@@ -1,9 +1,10 @@
 /* ===== Full Screen Slides Template Styles ===== */
 
 :root {
-    --primary: #0ea5e9;
-    --secondary: #8b5cf6;
-    --accent: #f59e0b;
+    /* Clean & Elegant: Navy Elegance (Dark) */
+    --primary: #3b82f6;
+    --secondary: #60a5fa;
+    --accent: #dbeafe;
     --background: #0f172a;
     --surface: #1e293b;
     --text: #f1f5f9;

@@ -1,16 +1,17 @@
 /* ===== Marketing Pro Template Styles ===== */
 
 :root {
-    --primary: #ff6b35;
-    --secondary: #004e89;
-    --accent: #f7931e;
+    /* Clean & Elegant: Olive Warmth */
+    --primary: #65a30d;
+    --secondary: #84cc16;
+    --accent: #ecfccb;
     --background: #ffffff;
     --surface: #f8f9fa;
     --text: #1a1a1a;
     --text-light: #6b7280;
     --border: #e5e7eb;
     --shadow: rgba(0, 0, 0, 0.1);
-    --gradient: linear-gradient(135deg, var(--primary), var(--accent));
+    --gradient: linear-gradient(135deg, #65a30d, #7cb513);
 }
 
 * {

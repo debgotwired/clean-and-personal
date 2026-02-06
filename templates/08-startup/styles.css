@@ -6,16 +6,16 @@
 }
 
 :root {
-    --primary: #6366f1;
-    --primary-dark: #4f46e5;
-    --secondary: #8b5cf6;
+    --primary: #1e3a8a;
+    --primary-dark: #1e40af;
+    --secondary: #3b82f6;
     --success: #10b981;
     --text: #0f172a;
     --text-light: #64748b;
     --bg: #ffffff;
     --bg-light: #f8fafc;
     --border: #e2e8f0;
-    --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --gradient: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
 }
 
 body {

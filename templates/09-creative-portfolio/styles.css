@@ -6,7 +6,10 @@
 }
 
 :root {
-    --primary: #667eea;
+    /* Clean & Elegant: Olive Warmth */
+    --primary: #65a30d;
+    --secondary: #84cc16;
+    --accent: #ecfccb;
     --text: #1a1a1a;
     --text-light: #666;
     --bg: #ffffff;

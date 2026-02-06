@@ -1,16 +1,17 @@
 /* ===== Card Grid Template Styles ===== */
 
 :root {
-    --primary: #ec4899;
-    --secondary: #8b5cf6;
-    --accent: #14b8a6;
+    /* Clean & Elegant: Slate Elegance */
+    --primary: #475569;
+    --secondary: #64748b;
+    --accent: #f1f5f9;
     --background: #fafafa;
     --surface: #ffffff;
     --text: #1f2937;
     --text-light: #6b7280;
     --border: #e5e7eb;
     --shadow: rgba(0, 0, 0, 0.1);
-    --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+    --gradient: linear-gradient(135deg, #475569, #5a6575);
 }
 
 * {

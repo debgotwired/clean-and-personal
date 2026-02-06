@@ -6,7 +6,10 @@
 }
 
 :root {
-    --primary: #6366f1;
+    /* Clean & Elegant: Slate Elegance */
+    --primary: #475569;
+    --secondary: #64748b;
+    --accent: #f1f5f9;
     --text: #1a1a1a;
     --text-light: #6b7280;
     --bg: #f9fafb;

@@ -1,9 +1,10 @@
 /* ===== Masonry Grid Template Styles ===== */
 
 :root {
-    --primary: #0ea5e9;
-    --secondary: #64748b;
-    --accent: #f59e0b;
+    /* Clean & Elegant: Teal Precision */
+    --primary: #0891b2;
+    --secondary: #06b6d4;
+    --accent: #cffafe;
     --background: #ffffff;
     --surface: #f8fafc;
     --text: #1e293b;

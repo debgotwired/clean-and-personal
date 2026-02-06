@@ -1,9 +1,10 @@
 /* ===== Timeline Template Styles ===== */
 
 :root {
-    --primary: #3b82f6;
-    --secondary: #06b6d4;
-    --accent: #f59e0b;
+    /* Clean & Elegant: Navy Elegance */
+    --primary: #1e3a8a;
+    --secondary: #3b82f6;
+    --accent: #dbeafe;
     --background: #ffffff;
     --surface: #f8fafc;
     --text: #1f2937;

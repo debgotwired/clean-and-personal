@@ -1,16 +1,17 @@
 /* ===== One Page Scroll Template Styles ===== */
 
 :root {
-    --primary: #2563eb;
-    --secondary: #7c3aed;
-    --accent: #f59e0b;
+    /* Clean & Elegant: Teal Precision */
+    --primary: #0891b2;
+    --secondary: #06b6d4;
+    --accent: #cffafe;
     --background: #ffffff;
     --surface: #f8fafc;
     --text: #0f172a;
     --text-light: #64748b;
     --border: #e2e8f0;
     --shadow: rgba(0, 0, 0, 0.1);
-    --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+    --gradient: linear-gradient(135deg, #0891b2, #0e7490);
 }
 
 * {

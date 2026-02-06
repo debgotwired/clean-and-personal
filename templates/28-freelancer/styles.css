@@ -1,16 +1,17 @@
 /* ===== Freelancer Template Styles ===== */
 
 :root {
-    --primary: #8b5cf6;
-    --secondary: #ec4899;
-    --accent: #f59e0b;
+    /* Clean & Elegant: Olive Warmth */
+    --primary: #65a30d;
+    --secondary: #84cc16;
+    --accent: #ecfccb;
     --background: #fafafa;
     --surface: #ffffff;
     --text: #1f2937;
     --text-light: #6b7280;
     --border: #e5e7eb;
     --shadow: rgba(0, 0, 0, 0.1);
-    --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+    --gradient: linear-gradient(135deg, #65a30d, #7cb513);
 }
 
 * {

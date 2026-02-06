@@ -1,9 +1,10 @@
 /* ===== Horizontal Scroll Template Styles ===== */
 
 :root {
-    --primary: #8b5cf6;
-    --secondary: #ec4899;
-    --accent: #f59e0b;
+    /* Clean & Elegant: Slate Elegance (Dark) */
+    --primary: #94a3b8;
+    --secondary: #cbd5e1;
+    --accent: #f1f5f9;
     --background: #0f172a;
     --text: #f1f5f9;
     --text-dim: #94a3b8;
