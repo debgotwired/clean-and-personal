@@ -219,6 +219,7 @@ const createMobileMenu = () => {
         toggle.className = 'mobile-toggle';
         toggle.innerHTML = '☰';
         toggle.setAttribute('aria-label', 'Toggle menu');
+        toggle.setAttribute('aria-expanded', 'false');
         toggle.style.cssText = `
             display: block;
             background: none;
@@ -229,7 +230,8 @@ const createMobileMenu = () => {
         `;
 
         toggle.addEventListener('click', () => {
-            navLinks.classList.toggle('mobile-open');
+            const isOpen = navLinks.classList.toggle('mobile-open');
+            toggle.setAttribute('aria-expanded', isOpen);
         });
 
         nav.appendChild(toggle);

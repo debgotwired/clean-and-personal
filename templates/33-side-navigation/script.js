@@ -12,12 +12,14 @@ function openSidebar() {
     sidebar.classList.add('open');
     mobileOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
 }
 
 function closeSidebar() {
     sidebar.classList.remove('open');
     mobileOverlay.classList.remove('active');
     document.body.style.overflow = '';
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
 }
 
 if (menuToggle) {

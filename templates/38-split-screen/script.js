@@ -10,10 +10,12 @@ const rightPanel = document.querySelector('.right-panel');
 if (mobileMenuToggle) {
     mobileMenuToggle.addEventListener('click', () => {
         leftPanel.classList.toggle('active');
+        const isOpen = leftPanel.classList.contains('active');
+        mobileMenuToggle.setAttribute('aria-expanded', isOpen);
 
         // Animate hamburger icon
         const spans = mobileMenuToggle.querySelectorAll('span');
-        if (leftPanel.classList.contains('active')) {
+        if (isOpen) {
             spans[0].style.transform = 'rotate(45deg) translateY(8px)';
             spans[1].style.opacity = '0';
             spans[2].style.transform = 'rotate(-45deg) translateY(-8px)';
@@ -30,6 +32,7 @@ if (rightPanel && window.innerWidth <= 768) {
     rightPanel.addEventListener('click', () => {
         if (leftPanel.classList.contains('active')) {
             leftPanel.classList.remove('active');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
             const spans = mobileMenuToggle.querySelectorAll('span');
             spans[0].style.transform = 'none';
             spans[1].style.opacity = '1';
