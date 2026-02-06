@@ -189,3 +189,12 @@ scrollContainer.addEventListener('scroll', preloadNextSection);
 
 console.log('Horizontal Scroll template loaded successfully!');
 console.log(`Total sections: ${totalSections}`);
+
+// Mobile viewport height fix
+const setVh = () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+};
+window.addEventListener("DOMContentLoaded", setVh);
+window.addEventListener("resize", setVh);
+

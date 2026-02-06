@@ -19,7 +19,7 @@ body {
     line-height: 1.6;
     color: var(--text);
     background: #6366f1;
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     overflow-x: hidden;
 }
 

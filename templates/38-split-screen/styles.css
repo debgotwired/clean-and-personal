@@ -32,7 +32,7 @@ body {
 /* ===== Split Container ===== */
 .split-container {
     display: flex;
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
 }
 
 /* ===== Left Panel (Fixed) ===== */
@@ -41,7 +41,7 @@ body {
     left: 0;
     top: 0;
     width: 40%;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background: var(--left-bg);
     color: var(--text-white);
     display: flex;
@@ -199,7 +199,7 @@ body {
 .right-panel {
     margin-left: 40%;
     width: 60%;
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     background: var(--right-bg);
     padding: 4rem;
 }

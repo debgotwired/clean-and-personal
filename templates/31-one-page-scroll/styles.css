@@ -100,13 +100,13 @@ body {
 .scroll-container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 /* ===== Section Styles ===== */
 .section {
     position: relative;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     scroll-snap-align: start;
     scroll-snap-stop: always;
     display: flex;

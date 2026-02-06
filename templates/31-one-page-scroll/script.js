@@ -226,3 +226,12 @@ document.querySelectorAll('a[target="_blank"]').forEach(link => {
 });
 
 console.log('One Page Scroll template loaded successfully!');
+
+// Mobile viewport height fix
+const setVh = () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+};
+window.addEventListener("DOMContentLoaded", setVh);
+window.addEventListener("resize", setVh);
+

@@ -72,7 +72,7 @@ code {
     left: 0;
     top: 0;
     width: var(--sidebar-width);
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background: var(--sidebar-bg);
     color: white;
     display: flex;
@@ -271,7 +271,7 @@ code {
 /* ===== Main Content ===== */
 .main-content {
     margin-left: var(--sidebar-width);
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     display: flex;
     flex-direction: column;
 }
