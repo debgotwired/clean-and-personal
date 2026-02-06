@@ -1,0 +1,8 @@
+{
+  "name": "Blog-First Template",
+  "description": "Content-focused design for writers and thought leaders",
+  "colors": { "primary": "#0066cc", "text": "#1a1a1a" },
+  "fonts": { "primary": "Inter" },
+  "sections": ["essays", "recent", "about", "newsletter"],
+  "features": ["Essay showcase", "Newsletter signup", "Dark mode", "Responsive"]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Playful Developer Template",
+  "description": "Colorful, fun, and approachable design for developer advocates and educators",
+  "preview": "preview.png",
+  "colors": {
+    "green": "#24d05a",
+    "pink": "#eb4888",
+    "blue": "#10a2f5",
+    "gold": "#e9bc3f",
+    "purple": "#8b5cf6"
+  },
+  "fonts": {
+    "primary": "Inter"
+  },
+  "sections": [
+    "hero",
+    "about",
+    "blog",
+    "projects"
+  ],
+  "features": [
+    "Multi-color theme",
+    "Animated cards on scroll",
+    "Sticky navigation",
+    "Smooth scrolling",
+    "Dark mode support",
+    "Reduced motion support",
+    "Fully responsive"
+  ],
+  "bestFor": [
+    "Developer advocates",
+    "Tech educators",
+    "Community builders",
+    "Content creators",
+    "Fun-loving developers"
+  ]
+}
