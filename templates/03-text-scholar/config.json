@@ -1,0 +1,29 @@
+{
+  "name": "Text Scholar Template",
+  "description": "Ultra-minimalist template for long-form reading and research",
+  "preview": "preview.png",
+  "colors": {
+    "background": "#ffffff",
+    "text": "#1a1a1a",
+    "link": "#0066cc",
+    "border": "#e0e0e0"
+  },
+  "fonts": {
+    "serif": "Libre Baskerville",
+    "sans": "Source Sans 3"
+  },
+  "sections": [
+    "about",
+    "writing",
+    "research",
+    "contact"
+  ],
+  "features": [
+    "Serif typography for readability",
+    "Sticky navigation",
+    "Active section highlighting",
+    "Dark mode support",
+    "Print-friendly styles",
+    "Smooth scrolling"
+  ]
+}

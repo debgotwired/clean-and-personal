@@ -1,0 +1,27 @@
+{
+  "name": "Minimal Clean Template",
+  "description": "Ultra-simple markdown-style layout with system fonts",
+  "preview": "preview.png",
+  "colors": {
+    "background": "#ffffff",
+    "text": "#000000",
+    "link": "#0066cc"
+  },
+  "fonts": {
+    "primary": "System (San Francisco, Segoe UI, etc.)"
+  },
+  "sections": [
+    "about",
+    "work",
+    "projects",
+    "writing",
+    "connect"
+  ],
+  "features": [
+    "System fonts for fast loading",
+    "Markdown-style simplicity",
+    "Dark mode support",
+    "No build tools needed",
+    "Works without JavaScript"
+  ]
+}
