@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean and Personal - 50 Beautiful Website Templates</title>
+    <meta name="description" content="Open source personal website builder with 50 beautiful production-ready templates. Built with Claude AI. Free to use.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --accent: #ec4899;
+            --background: #fafafa;
+            --surface: #ffffff;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --border: #e5e7eb;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--background);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            background: var(--surface);
+            padding: 2rem 0;
+            box-shadow: 0 1px 3px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text);
+            border: 2px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 4rem 0 3rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
+        /* Filters */
+        .filters {
+            padding: 2rem 0;
+            background: var(--surface);
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.25rem;
+            border: 2px solid var(--border);
+            background: white;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.875rem;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: var(--primary);
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Template Grid */
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .template-card {
+            background: var(--surface);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px var(--shadow);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px var(--shadow);
+        }
+
+        .template-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .template-content {
+            padding: 1.5rem;
+        }
+
+        .template-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .template-number {
+            display: inline-block;
+            background: var(--background);
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+        }
+
+        .template-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .template-description {
+            color: var(--text-light);
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .template-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: var(--background);
+            color: var(--text-light);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .template-actions {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .template-actions .btn {
+            flex: 1;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: white;
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .templates-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                gap: 2rem;
+            }
+
+            .filter-buttons {
+                padding: 0 1rem;
+            }
+        }
+
+        /* Loading state */
+        .loading {
+            text-align: center;
+            padding: 4rem 0;
+            color: var(--text-light);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Clean and Personal</div>
+                <div class="header-actions">
+                    <a href="https://github.com/debgotwired/clean-and-personal" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                    <a href="https://vercel.com/new/clone?repository-url=https://github.com/debgotwired/clean-and-personal" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Deploy to Vercel</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>
+                50 Beautiful Website Templates<br>
+                <span class="gradient-text">Built with Claude AI</span>
+            </h1>
+            <p>
+                Open source personal website builder with production-ready templates.
+                No coding required, but fully customizable. Deploy in minutes.
+            </p>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">50</div>
+                    <div class="stat-label">Templates</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free & Open Source</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Build Tools Needed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <div class="container">
+        <div class="filters">
+            <div class="search-box">
+                <input type="text" class="search-input" id="search" placeholder="Search templates...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Templates</button>
+                <button class="filter-btn" data-category="core">Core</button>
+                <button class="filter-btn" data-category="trends">Design Trends</button>
+                <button class="filter-btn" data-category="professional">Professional</button>
+                <button class="filter-btn" data-category="layout">Layouts</button>
+                <button class="filter-btn" data-category="purpose">Purpose-Driven</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Templates Grid -->
+    <div class="container">
+        <div class="templates-grid" id="templates-grid">
+            <!-- Templates will be injected here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Clean and Personal</h3>
+                    <p>Open source personal website builder with 50 beautiful templates. Built with Claude Sonnet 4.5.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="https://github.com/debgotwired/clean-and-personal">GitHub Repository</a>
+                    <a href="https://github.com/debgotwired/clean-and-personal/blob/main/README.md">Documentation</a>
+                    <a href="https://github.com/debgotwired/clean-and-personal/blob/main/docs/50-TEMPLATES-TAXONOMY.md">Template Guide</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#hero">All Templates</a>
+                    <a href="https://github.com/debgotwired/clean-and-personal/issues">Report Issue</a>
+                    <a href="https://github.com/debgotwired/clean-and-personal/blob/main/LICENSE">MIT License</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clean and Personal. Built with ♥ using Claude Sonnet 4.5. MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Template data
+        const templates = [
+            // Core Templates (1-10)
+            {num: 1, name: "Founder", category: "core", description: "Professional light green gradient for founders and entrepreneurs", tags: ["Professional", "Light Mode", "Gradient"]},
+            {num: 2, name: "Developer Dark", category: "core", description: "Terminal aesthetic with neon green for engineers", tags: ["Dark Mode", "Technical", "Terminal"]},
+            {num: 3, name: "Text Scholar", category: "core", description: "Ultra-minimalist long-form reading for researchers", tags: ["Minimal", "Academic", "Reading"]},
+            {num: 4, name: "Minimal Clean", category: "core", description: "Markdown-style ultra-simple for designers", tags: ["Minimal", "Clean", "Simple"]},
+            {num: 5, name: "Playful Developer", category: "core", description: "Colorful accents and fun for developer advocates", tags: ["Colorful", "Playful", "Developer"]},
+            {num: 6, name: "Blog-First", category: "core", description: "Content-focused essays for technical writers", tags: ["Blog", "Content", "Writing"]},
+            {num: 7, name: "Resume/CV", category: "core", description: "Traditional one-page for job seekers", tags: ["Resume", "Professional", "Jobs"]},
+            {num: 8, name: "Startup", category: "core", description: "Business-focused with metrics for founders", tags: ["Startup", "Business", "Metrics"]},
+            {num: 9, name: "Creative Portfolio", category: "core", description: "Artistic visual-first for designers", tags: ["Creative", "Portfolio", "Visual"]},
+            {num: 10, name: "Project Showcase", category: "core", description: "Card layout for product managers", tags: ["Projects", "Cards", "Portfolio"]},
+
+            // Design Trends (11-21)
+            {num: 11, name: "Bento Grid", category: "trends", description: "Modular card layout 2026 trend", tags: ["Modern", "2026", "Grid"]},
+            {num: 12, name: "Glassmorphism", category: "trends", description: "Frosted glass effects for creatives", tags: ["Glass", "Modern", "Effects"]},
+            {num: 13, name: "Y2K Retro", category: "trends", description: "Nostalgic 90s/2000s aesthetic", tags: ["Retro", "Y2K", "Nostalgic"]},
+            {num: 14, name: "Organic Shapes", category: "trends", description: "Flowing natural forms", tags: ["Organic", "Shapes", "Nature"]},
+            {num: 15, name: "Hand-Drawn", category: "trends", description: "Sketchy anti-AI aesthetic", tags: ["Hand-drawn", "Human", "Sketchy"]},
+            {num: 16, name: "Bold Typography", category: "trends", description: "Type-first design", tags: ["Typography", "Bold", "Type"]},
+            {num: 17, name: "3D Elements", category: "trends", description: "Subtle depth effects", tags: ["3D", "Depth", "Modern"]},
+            {num: 18, name: "Brutalist", category: "trends", description: "Raw experimental design", tags: ["Brutalist", "Raw", "Bold"]},
+            {num: 19, name: "Swiss Style", category: "trends", description: "Grid-based systematic", tags: ["Swiss", "Grid", "Clean"]},
+            {num: 20, name: "Memphis Design", category: "trends", description: "80s geometric colorful", tags: ["Memphis", "80s", "Colorful"]},
+            {num: 21, name: "Neumorphism", category: "trends", description: "Soft UI embossed", tags: ["Neumorphic", "Soft", "UI"]},
+
+            // Professional Portfolios (22-30)
+            {num: 22, name: "Software Engineer", category: "professional", description: "Code-focused technical portfolio", tags: ["Developer", "Code", "Technical"]},
+            {num: 23, name: "UI/UX Designer", category: "professional", description: "Case study driven design portfolio", tags: ["Design", "UX", "Case Studies"]},
+            {num: 24, name: "Product Designer", category: "professional", description: "Product-focused with metrics", tags: ["Product", "Design", "Metrics"]},
+            {num: 25, name: "Graphic Designer", category: "professional", description: "Visual-first image gallery", tags: ["Graphics", "Visual", "Gallery"]},
+            {num: 26, name: "Marketing Pro", category: "professional", description: "Campaign showcase with metrics", tags: ["Marketing", "Campaigns", "ROI"]},
+            {num: 27, name: "Consultant", category: "professional", description: "Services-focused professional", tags: ["Consulting", "Business", "Services"]},
+            {num: 28, name: "Freelancer", category: "professional", description: "Versatile with availability status", tags: ["Freelance", "Versatile", "Portfolio"]},
+            {num: 29, name: "Illustrator", category: "professional", description: "Artwork gallery with masonry", tags: ["Art", "Illustration", "Gallery"]},
+            {num: 30, name: "Animator", category: "professional", description: "Motion-focused video showcase", tags: ["Animation", "Video", "Motion"]},
+
+            // Layout Innovations (31-40)
+            {num: 31, name: "One Page Scroll", category: "layout", description: "Full-screen scrolling sections", tags: ["Scroll", "Full-screen", "Sections"]},
+            {num: 32, name: "Multi Page Classic", category: "layout", description: "Traditional multi-page site", tags: ["Multi-page", "Classic", "Traditional"]},
+            {num: 33, name: "Side Navigation", category: "layout", description: "Fixed sidebar doc-style", tags: ["Sidebar", "Navigation", "Docs"]},
+            {num: 34, name: "Full Screen Slides", category: "layout", description: "Presentation-style slides", tags: ["Slides", "Presentation", "Full-screen"]},
+            {num: 35, name: "Magazine Layout", category: "layout", description: "Editorial-style magazine", tags: ["Magazine", "Editorial", "Grid"]},
+            {num: 36, name: "Card Grid", category: "layout", description: "Pinterest-style cards", tags: ["Cards", "Grid", "Pinterest"]},
+            {num: 37, name: "Timeline", category: "layout", description: "Chronological timeline", tags: ["Timeline", "Chronological", "Journey"]},
+            {num: 38, name: "Split Screen", category: "layout", description: "Dual-pane design", tags: ["Split", "Dual", "Contrast"]},
+            {num: 39, name: "Horizontal Scroll", category: "layout", description: "Left-to-right scrolling", tags: ["Horizontal", "Scroll", "Unique"]},
+            {num: 40, name: "Masonry Grid", category: "layout", description: "Variable-height masonry", tags: ["Masonry", "Grid", "Dynamic"]},
+
+            // Purpose-Driven (41-50)
+            {num: 41, name: "Job Seeker Resume", category: "purpose", description: "ATS-friendly hire-me focused", tags: ["Resume", "Jobs", "ATS"]},
+            {num: 42, name: "Startup Founder", category: "purpose", description: "Pitch-focused with traction", tags: ["Startup", "Pitch", "Founder"]},
+            {num: 43, name: "Blog First Writer", category: "purpose", description: "Content-primary portfolio", tags: ["Blog", "Writer", "Content"]},
+            {num: 44, name: "Link In Bio", category: "purpose", description: "Social hub landing page", tags: ["Social", "Links", "Hub"]},
+            {num: 45, name: "Course Creator", category: "purpose", description: "Teaching portfolio with catalog", tags: ["Education", "Courses", "Teaching"]},
+            {num: 46, name: "Speaker", category: "purpose", description: "Conference speaker showcase", tags: ["Speaking", "Conference", "Events"]},
+            {num: 47, name: "Podcast Host", category: "purpose", description: "Episode showcase with player", tags: ["Podcast", "Audio", "Episodes"]},
+            {num: 48, name: "Newsletter Writer", category: "purpose", description: "Substack-style newsletter", tags: ["Newsletter", "Writing", "Email"]},
+            {num: 49, name: "Community Builder", category: "purpose", description: "Network-focused community", tags: ["Community", "Network", "Social"]},
+            {num: 50, name: "Open Source Maintainer", category: "purpose", description: "GitHub-focused developer", tags: ["Open Source", "GitHub", "Developer"]}
+        ];
+
+        // Render templates
+        function renderTemplates(filteredTemplates = templates) {
+            const grid = document.getElementById('templates-grid');
+
+            if (filteredTemplates.length === 0) {
+                grid.innerHTML = '<div class="loading">No templates found. Try adjusting your filters.</div>';
+                return;
+            }
+
+            grid.innerHTML = filteredTemplates.map(template => {
+                const paddedNum = String(template.num).padStart(2, '0');
+                const slug = template.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                const previewPath = `templates/${paddedNum}-${slug}/preview.png`;
+
+                return `
+                    <div class="template-card" data-category="${template.category}">
+                        <img src="${previewPath}" alt="${template.name} preview" class="template-image" loading="lazy">
+                        <div class="template-content">
+                            <div class="template-header">
+                                <span class="template-number">#${paddedNum}</span>
+                            </div>
+                            <h3 class="template-name">${template.name}</h3>
+                            <p class="template-description">${template.description}</p>
+                            <div class="template-tags">
+                                ${template.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                            </div>
+                            <div class="template-actions">
+                                <a href="templates/${paddedNum}-${slug}/index.html" class="btn btn-primary" target="_blank">Live Demo</a>
+                                <a href="templates/${paddedNum}-${slug}/" class="btn btn-secondary">View Files</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+                const filtered = category === 'all'
+                    ? templates
+                    : templates.filter(t => t.category === category);
+
+                renderTemplates(filtered);
+            });
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('search');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = templates.filter(t =>
+                t.name.toLowerCase().includes(searchTerm) ||
+                t.description.toLowerCase().includes(searchTerm) ||
+                t.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+            );
+            renderTemplates(filtered);
+        });
+
+        // Initial render
+        renderTemplates();
+    </script>
+</body>
+</html>
