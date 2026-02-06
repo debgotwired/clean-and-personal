@@ -1,0 +1,36 @@
+{
+  "name": "Developer Dark Mode Template",
+  "description": "Terminal/hacker aesthetic with neon green on dark background",
+  "preview": "preview.png",
+  "colors": {
+    "primary": "#4af626",
+    "dark": "#0a0a0a",
+    "darker": "#050505",
+    "accent": "#2d5016"
+  },
+  "fonts": {
+    "primary": "JetBrains Mono"
+  },
+  "sections": [
+    "hero",
+    "about",
+    "experience",
+    "projects",
+    "writing"
+  ],
+  "customizable": {
+    "name": "Your Name",
+    "tagline": "Your tagline",
+    "about": "About section",
+    "jobs": "Work experience entries",
+    "projects": "Your projects with links",
+    "writing": "Blog posts or articles"
+  },
+  "features": [
+    "Particle canvas background",
+    "Cursor glow effect",
+    "Terminal-style prompts",
+    "Smooth animations",
+    "Responsive design"
+  ]
+}

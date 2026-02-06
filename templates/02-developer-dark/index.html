@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Developer</title>
+    <meta name="description" content="Software engineer building things on the internet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yoursite.com/">
+    <meta property="og:title" content="Your Name - Developer">
+    <meta property="og:description" content="Software engineer building things on the internet">
+    <meta property="og:image" content="https://yoursite.com/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yoursite.com/">
+    <meta property="twitter:title" content="Your Name - Developer">
+    <meta property="twitter:description" content="Software engineer building things on the internet">
+    <meta property="twitter:image" content="https://yoursite.com/og-image.png">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Terminal cursor effect -->
+    <div id="cursor-glow"></div>
+
+    <!-- Canvas background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="terminal-prompt">
+                <span class="prompt-symbol">$</span>
+                <span class="command">whoami</span>
+            </div>
+            <h1 class="name">Your Name</h1>
+            <p class="tagline">Software Engineer × Builder × Open Source</p>
+
+            <div class="links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="mailto:you@email.com">Email</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>> about.txt</h2>
+            <p>
+                I build software that solves real problems. Currently working on [current project/company],
+                previously at [previous company].
+            </p>
+            <p>
+                I love working with [your tech stack: JavaScript, Python, Go, etc.], and I'm passionate
+                about [your interests: open source, dev tools, etc.].
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience">
+            <h2>> experience.log</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Senior Software Engineer</h3>
+                    <span class="date">2023 - Present</span>
+                </div>
+                <p class="company">Company Name</p>
+                <p>Building features that impact millions of users. Tech stack: React, Node.js, PostgreSQL.</p>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Software Engineer</h3>
+                    <span class="date">2021 - 2023</span>
+                </div>
+                <p class="company">Previous Company</p>
+                <p>Developed core platform features and improved performance by 50%.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>> projects/</h2>
+
+            <div class="project">
+                <h3>
+                    <span class="folder-icon">📁</span>
+                    Project Name
+                    <a href="https://github.com/you/project" class="external-link" target="_blank">↗</a>
+                </h3>
+                <p>A cool project that does something awesome. Built with React and Node.js.</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>
+                    <span class="folder-icon">📁</span>
+                    Another Project
+                    <a href="https://github.com/you/project2" class="external-link" target="_blank">↗</a>
+                </h3>
+                <p>Open source tool used by 10k+ developers. Helps with X, Y, and Z.</p>
+                <div class="tech-stack">
+                    <span>TypeScript</span>
+                    <span>Python</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writing Section -->
+        <section class="writing">
+            <h2>> writing/</h2>
+            <ul>
+                <li>
+                    <a href="#">How I Built X in 24 Hours</a>
+                    <span class="date">2026-01-15</span>
+                </li>
+                <li>
+                    <a href="#">Understanding Y: A Deep Dive</a>
+                    <span class="date">2025-12-10</span>
+                </li>
+                <li>
+                    <a href="#">My Development Setup in 2026</a>
+                    <span class="date">2025-11-20</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <span class="prompt-symbol">$</span>
+                <span class="cursor-blink">_</span>
+            </p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

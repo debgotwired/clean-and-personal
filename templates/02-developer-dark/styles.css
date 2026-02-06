@@ -1,0 +1,336 @@
+/* ==========================================
+   Terminal Dark Mode Theme
+   Neon green on dark background
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --neon-green: #4af626;
+    --dark-green: #2d5016;
+    --bg-dark: #0a0a0a;
+    --bg-darker: #050505;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --glow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Canvas background for particles */
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Cursor glow effect */
+#cursor-glow {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(74, 246, 38, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    transition: opacity 0.3s;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.terminal-prompt {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.prompt-symbol {
+    color: var(--neon-green);
+    margin-right: 0.5rem;
+}
+
+.command {
+    color: var(--text-secondary);
+}
+
+.name {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 600;
+    color: var(--neon-green);
+    margin-bottom: 1rem;
+    text-shadow: var(--glow);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    padding-bottom: 0.2rem;
+}
+
+.links a:hover {
+    color: var(--neon-green);
+    border-bottom-color: var(--neon-green);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 5rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--neon-green);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+h2::before {
+    content: "// ";
+    color: var(--dark-green);
+}
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Experience Section */
+.job {
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--dark-green);
+    transition: border-color 0.3s;
+}
+
+.job:hover {
+    border-left-color: var(--neon-green);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.job h3 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.date {
+    color: var(--dark-green);
+    font-size: 0.9rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.company {
+    color: var(--neon-green);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: rgba(74, 246, 38, 0.03);
+    border: 1px solid rgba(74, 246, 38, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    background: rgba(74, 246, 38, 0.06);
+    border-color: rgba(74, 246, 38, 0.3);
+    transform: translateX(5px);
+}
+
+.project h3 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.folder-icon {
+    font-size: 1.2rem;
+}
+
+.external-link {
+    color: var(--neon-green);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+
+.external-link:hover {
+    transform: translate(3px, -3px);
+}
+
+.tech-stack {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tech-stack span {
+    background: rgba(74, 246, 38, 0.1);
+    color: var(--neon-green);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(74, 246, 38, 0.2);
+}
+
+/* Writing Section */
+.writing ul {
+    list-style: none;
+}
+
+.writing li {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.writing li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--neon-green);
+}
+
+.writing a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.writing a:hover {
+    color: var(--neon-green);
+}
+
+.writing .date {
+    margin-left: 1rem;
+    font-size: 0.85rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 8rem;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(74, 246, 38, 0.1);
+}
+
+.cursor-blink {
+    animation: blink 1s infinite;
+    color: var(--neon-green);
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 1.5rem;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .links {
+        gap: 1.5rem;
+    }
+
+    .job-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .writing .date {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.3rem;
+    }
+}

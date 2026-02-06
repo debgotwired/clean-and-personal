@@ -1,0 +1,29 @@
+{
+  "name": "Founder Template",
+  "description": "Clean professional layout for founders and entrepreneurs",
+  "preview": "preview.png",
+  "colors": {
+    "primary": "#22c55e",
+    "secondary": "#16a34a",
+    "background": "#fafafa",
+    "text": "#2d3d2d"
+  },
+  "fonts": {
+    "primary": "JetBrains Mono"
+  },
+  "sections": [
+    "hero",
+    "bio",
+    "experience",
+    "writing",
+    "contact"
+  ],
+  "customizable": {
+    "name": "Your Name",
+    "tagline": "Your tagline",
+    "links": ["LinkedIn", "Twitter", "Email", "Writing"],
+    "bio": "Your bio paragraphs",
+    "experience": "Work history",
+    "writing": "Blog posts or articles"
+  }
+}

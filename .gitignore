@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables
+.env
+.env.local
+
+# Build outputs (if needed in future)
+dist/
+build/
+*.min.js
+*.min.css
+
+# Dependencies (if added in future)
+node_modules/
+package-lock.json
+yarn.lock
+
+# User-specific files
+my-site/
+personal-site/
