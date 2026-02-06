@@ -8,7 +8,7 @@ Build your personal website in minutes with Claude's help. No coding required (b
 
 ## ✨ Features
 
-- 🎨 **10 Beautiful Templates** - From minimal to creative, light to dark
+- 🎨 **50+ Beautiful Templates** - From minimal to creative, light to dark
 - 🤖 **Claude-Powered** - Customize conversationally: "make it blue", "add a contact form"
 - 📄 **PDF Import** - Extract info from LinkedIn, resumes, Twitter automatically
 - 🚀 **One-Click Deploy** - Free hosting on Vercel
@@ -229,7 +229,7 @@ See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for full guide including:
 
 ## 📖 Documentation
 
-- [Template Overview](docs/TEMPLATES.md) - All 10 templates explained
+- [Template Overview](docs/TEMPLATES.md) - All templates explained
 - [Data Import Guide](docs/DATA-IMPORT.md) - How to import PDFs, LinkedIn, etc.
 - [Deployment Guide](docs/DEPLOYMENT.md) - Step-by-step deployment
 - [Claude Skill](skills/website-builder.md) - How to use Claude for customization
