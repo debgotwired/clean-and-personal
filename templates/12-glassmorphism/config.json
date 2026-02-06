@@ -1,0 +1,13 @@
+{
+  "name": "Glassmorphism Template",
+  "description": "Modern frosted glass effects with transparent backgrounds and blur - 2026 trend",
+  "colors": {
+    "primary": "#6366f1",
+    "glass": "rgba(255, 255, 255, 0.1)"
+  },
+  "fonts": {
+    "primary": "Poppins"
+  },
+  "sections": ["hero", "about", "work", "skills", "contact"],
+  "features": ["Glassmorphism design", "Frosted glass effects", "Animated background shapes", "Backdrop blur", "Gradient background", "Mobile responsive", "Scroll animations"]
+}

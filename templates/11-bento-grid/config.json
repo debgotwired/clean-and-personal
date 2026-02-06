@@ -1,0 +1,24 @@
+{
+  "name": "Bento Grid Template",
+  "description": "Modern modular card layout inspired by 2026 bento grid design trend",
+  "colors": {
+    "primary": "#6366f1",
+    "text": "#1a1a1a",
+    "bg": "#f9fafb"
+  },
+  "fonts": {
+    "primary": "Space Grotesk"
+  },
+  "sections": ["hero", "profile", "stats", "projects", "services", "experience", "testimonial", "newsletter", "contact"],
+  "features": [
+    "Modular bento grid layout",
+    "Variable card sizes (small, medium, large)",
+    "Smooth scroll animations",
+    "Project showcase cards",
+    "Newsletter signup",
+    "Contact form",
+    "Mobile responsive",
+    "Dark mode",
+    "Modern 2026 design trend"
+  ]
+}
