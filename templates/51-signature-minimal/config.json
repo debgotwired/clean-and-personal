@@ -1,0 +1,45 @@
+{
+  "name": "Signature Minimal",
+  "description": "Minimalist personal site with handwritten signature element and dark mode toggle",
+  "inspiration": "wlovedaypowell.com",
+  "preview": "preview.png",
+  "colors": {
+    "light": {
+      "background": "#ffffff",
+      "text": "#1a1a1a",
+      "textLight": "#6b7280",
+      "border": "#e5e5e5"
+    },
+    "dark": {
+      "background": "#1a1a1a",
+      "text": "#f5f5f5",
+      "textLight": "#9ca3af",
+      "border": "#374151"
+    }
+  },
+  "fonts": {
+    "heading": "Playfair Display",
+    "body": "Inter"
+  },
+  "sections": [
+    "hero",
+    "narrative",
+    "projects",
+    "cta",
+    "footer"
+  ],
+  "features": [
+    "dark-mode-toggle",
+    "signature-animation",
+    "scroll-fade-in"
+  ],
+  "customizable": {
+    "name": "Your Name",
+    "location": "City, Country",
+    "profileImage": "assets/profile.jpg",
+    "narrative": "Your career story and bio",
+    "projects": "Selected work items",
+    "contactInfo": "Phone, email",
+    "socialLinks": "LinkedIn, Twitter"
+  }
+}

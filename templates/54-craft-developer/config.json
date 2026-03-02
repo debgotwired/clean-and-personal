@@ -1,0 +1,41 @@
+{
+  "name": "Craft Developer",
+  "description": "Ultra-minimalist developer portfolio focused on craft and philosophy",
+  "inspiration": "paco.me (Paco Coursey)",
+  "preview": "preview.png",
+  "colors": {
+    "background": "#fafafa",
+    "text": "#171717",
+    "textLight": "#737373",
+    "accent": "#0066cc",
+    "border": "#e5e5e5"
+  },
+  "fonts": {
+    "sans": "Inter",
+    "serif": "Newsreader"
+  },
+  "sections": [
+    "header",
+    "building",
+    "projects",
+    "writing",
+    "now",
+    "connect"
+  ],
+  "features": [
+    "underscore-dividers",
+    "italic-emphasis",
+    "minimal-design",
+    "philosophy-section"
+  ],
+  "customizable": {
+    "name": "Your Name",
+    "tagline": "Your craft statement",
+    "currentRole": "Current company/role",
+    "pastRole": "Previous company/role",
+    "projects": "Open source projects",
+    "writing": "Blog posts",
+    "nowContent": "What you're focused on",
+    "socialLinks": "Twitter, email"
+  }
+}

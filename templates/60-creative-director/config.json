@@ -1,0 +1,42 @@
+{
+  "name": "Creative Director",
+  "description": "Professional services template with story, services grid, client logos, and testimonials",
+  "inspiration": "amyleisner.com",
+  "preview": "preview.png",
+  "colors": {
+    "background": "#ffffff",
+    "text": "#000000",
+    "textLight": "#666666",
+    "accent": "#32373c",
+    "surface": "#f9f9f9",
+    "border": "#e5e5e5"
+  },
+  "fonts": {
+    "main": "Inter"
+  },
+  "sections": [
+    "hero",
+    "story",
+    "services",
+    "clients",
+    "testimonials",
+    "contact"
+  ],
+  "features": [
+    "services-grid",
+    "client-logos",
+    "testimonials-grid",
+    "sticky-header",
+    "scroll-animations"
+  ],
+  "customizable": {
+    "name": "Your Name",
+    "title": "Creative Director & Brand Strategist",
+    "story": "Your origin story",
+    "profileImage": "Your photo",
+    "services": "Your service offerings",
+    "clients": "Client logos",
+    "testimonials": "Client quotes",
+    "contactEmail": "hello@example.com"
+  }
+}

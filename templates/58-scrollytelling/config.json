@@ -1,0 +1,41 @@
+{
+  "name": "Scrollytelling",
+  "description": "Immersive storytelling template with full-screen chapters, parallax effects, and scroll animations",
+  "inspiration": "NYT Snowfall, The Pudding, SCMP features",
+  "preview": "preview.png",
+  "colors": {
+    "chapter1": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    "chapter2": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    "chapter3": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    "dark": "#1a1a1a",
+    "light": "#ffffff"
+  },
+  "fonts": {
+    "display": "Playfair Display",
+    "body": "Inter"
+  },
+  "sections": [
+    "hero",
+    "chapter-1",
+    "chapter-2",
+    "stats",
+    "chapter-3",
+    "quote",
+    "contact"
+  ],
+  "features": [
+    "progress-bar",
+    "scroll-animations",
+    "parallax-effects",
+    "counter-animation",
+    "sticky-chapters"
+  ],
+  "customizable": {
+    "name": "Your Name",
+    "subtitle": "Your story tagline",
+    "chapters": "Your story chapters",
+    "stats": "Key numbers",
+    "quote": "Inspiring quote",
+    "contactEmail": "hello@example.com"
+  }
+}

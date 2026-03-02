@@ -1,0 +1,259 @@
+/* AI Founder Template */
+/* Inspiration: carsonkahn.com */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    background: #000000;
+    min-height: 100vh;
+    cursor: none;
+}
+
+/* Custom cursor canvas */
+#cursorCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Main content */
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+header {
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    min-height: 1.2em;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: #888;
+}
+
+/* Sections */
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+/* Mission */
+.mission p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+/* Company Card */
+.company-card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.company-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.company-card .role {
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.company-card p {
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.company-card .link {
+    color: #3a92c5;
+    text-decoration: none;
+}
+
+.company-card .link:hover {
+    text-decoration: underline;
+}
+
+/* Logo Grid */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.logo-item {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.logo-item:hover {
+    border-color: #3a92c5;
+    background: #0a0a0a;
+}
+
+/* Investments */
+.investment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.investment {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.investment:hover {
+    border-color: #3a92c5;
+    color: #3a92c5;
+}
+
+/* Easter Egg */
+.easter-egg {
+    display: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.easter-egg.visible {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+    padding-top: 2rem;
+    border-top: 1px solid #222;
+}
+
+.contact {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.contact a:hover {
+    opacity: 1;
+}
+
+.hint {
+    font-size: 0.75rem;
+    color: #333;
+}
+
+/* Selection */
+::selection {
+    background: #000;
+    color: yellow;
+}
+
+/* Links */
+a {
+    color: #3a92c5;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    main {
+        padding: 4rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        cursor: auto;
+    }
+
+    #cursorCanvas {
+        display: none;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Focus States for Accessibility */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--accent, #0066cc);
+    outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent, #0066cc);
+    outline-offset: 2px;
+}

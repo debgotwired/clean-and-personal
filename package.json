@@ -8,7 +8,12 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node qa/runner.js",
+    "qa": "node qa/runner.js",
+    "qa:verbose": "node qa/runner.js --verbose",
+    "qa:quick": "node qa/runner.js --category structure",
+    "screenshots": "node scripts/screenshot-generator.js",
+    "qa:full": "npm run screenshots && npm run qa"
   },
   "repository": {
     "type": "git",

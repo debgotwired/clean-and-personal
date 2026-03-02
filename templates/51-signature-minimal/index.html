@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    <title>Your Name | Signature Minimal</title>
+    <meta name="description" content="A minimal personal website with signature element">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="profile-image">
+                <img src="assets/profile.jpg" alt="Profile photo" onerror="this.style.display='none'">
+            </div>
+            <h1>Your Name</h1>
+            <p class="location">San Francisco, CA</p>
+        </section>
+
+        <section class="narrative">
+            <p>
+                I'm a <strong>product designer</strong> who believes in the power of simplicity.
+                For the past decade, I've been crafting digital experiences that feel intuitive and human.
+            </p>
+            <p>
+                Currently, I lead design at <a href="#">Company</a>, where we're building tools
+                that help teams work better together. Previously, I helped shape products at
+                <a href="#">Previous Company</a> and <a href="#">Another Company</a>.
+            </p>
+            <p>
+                When I'm not designing, you'll find me hiking the Marin Headlands,
+                experimenting with film photography, or mentoring early-career designers.
+            </p>
+        </section>
+
+        <section class="projects">
+            <h2>Selected Work</h2>
+            <div class="project-grid">
+                <a href="#" class="project-item">
+                    <span class="project-name">Project Alpha</span>
+                    <span class="project-desc">Product design for a fintech startup</span>
+                </a>
+                <a href="#" class="project-item">
+                    <span class="project-name">Project Beta</span>
+                    <span class="project-desc">Brand identity and web design</span>
+                </a>
+                <a href="#" class="project-item">
+                    <span class="project-name">Project Gamma</span>
+                    <span class="project-desc">Mobile app redesign</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta">
+            <p>I'm always open to interesting conversations and collaborations.</p>
+            <p>Let's connect.</p>
+        </section>
+
+        <footer>
+            <div class="contact-links">
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="mailto:hello@example.com">hello@example.com</a>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+            </div>
+            <div class="signature">
+                <svg viewBox="0 0 200 60" class="signature-svg">
+                    <path d="M10,45 Q30,10 50,35 T90,25 Q110,20 130,40 T170,30 Q185,25 190,35"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

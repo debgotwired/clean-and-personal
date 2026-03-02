@@ -1,0 +1,41 @@
+{
+  "name": "Angel Investor",
+  "description": "Portfolio website for angel investors with portfolio and antiportfolio sections",
+  "inspiration": "ivanbercovich.com, tim.blog/portfolio",
+  "preview": "preview.png",
+  "colors": {
+    "background": "#fafafa",
+    "surface": "#ffffff",
+    "text": "#1a1a1a",
+    "textLight": "#6b7280",
+    "accent": "#2563eb",
+    "border": "#e5e7eb"
+  },
+  "fonts": {
+    "main": "Inter"
+  },
+  "sections": [
+    "header",
+    "thesis",
+    "portfolio",
+    "antiportfolio",
+    "writing",
+    "contact"
+  ],
+  "features": [
+    "portfolio-by-sector",
+    "antiportfolio",
+    "investment-thesis",
+    "pitch-cta"
+  ],
+  "customizable": {
+    "name": "Your Name",
+    "checkSize": "$25K - $100K",
+    "stage": "Pre-seed, Seed",
+    "focus": "AI, Fintech, DevTools",
+    "thesis": "Your investment thesis",
+    "portfolio": "Companies organized by sector",
+    "antiportfolio": "Missed investments and lessons",
+    "pitchEmail": "invest@example.com"
+  }
+}

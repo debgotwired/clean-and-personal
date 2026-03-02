@@ -1,0 +1,40 @@
+{
+  "name": "AI Founder",
+  "description": "Dark hacker aesthetic with typewriter effect, custom cursor, and Easter eggs",
+  "inspiration": "carsonkahn.com",
+  "preview": "preview.png",
+  "colors": {
+    "background": "#000000",
+    "text": "#ffffff",
+    "textMuted": "#888888",
+    "accent": "#3a92c5",
+    "surface": "#111111",
+    "border": "#222222"
+  },
+  "fonts": {
+    "main": "System UI stack"
+  },
+  "sections": [
+    "header",
+    "mission",
+    "current-company",
+    "affiliations",
+    "investments",
+    "contact"
+  ],
+  "features": [
+    "typewriter-effect",
+    "custom-cursor",
+    "ghost-trail",
+    "konami-code",
+    "easter-egg"
+  ],
+  "customizable": {
+    "name": "YOUR NAME",
+    "tagline": "building the future with AI",
+    "mission": "Your mission statement",
+    "company": "Your company details",
+    "affiliations": "Logos and partnerships",
+    "investments": "Angel investments"
+  }
+}

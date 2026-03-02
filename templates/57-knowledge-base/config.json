@@ -1,0 +1,47 @@
+{
+  "name": "Knowledge Base",
+  "description": "Notion-style digital garden with sidebar navigation, tags, and search",
+  "inspiration": "Notion, digital garden aesthetic",
+  "preview": "preview.png",
+  "colors": {
+    "light": {
+      "background": "#ffffff",
+      "sidebar": "#f7f6f3",
+      "text": "#37352f",
+      "accent": "#2eaadc"
+    },
+    "dark": {
+      "background": "#191919",
+      "sidebar": "#202020",
+      "text": "#e6e6e6"
+    }
+  },
+  "tagColors": {
+    "blue": { "bg": "#ddebf1", "text": "#0b4a6b" },
+    "green": { "bg": "#ddedea", "text": "#0c4a3e" },
+    "purple": { "bg": "#eae4f2", "text": "#412a5e" },
+    "orange": { "bg": "#faebdd", "text": "#6b3a00" },
+    "red": { "bg": "#fbe4e4", "text": "#5a0000" }
+  },
+  "fonts": {
+    "main": "System UI stack"
+  },
+  "sections": [
+    "sidebar",
+    "search",
+    "notes-grid",
+    "about"
+  ],
+  "features": [
+    "sidebar-navigation",
+    "dark-mode",
+    "search-filter",
+    "category-tags",
+    "card-grid"
+  ],
+  "customizable": {
+    "title": "Digital Garden",
+    "categories": "Essays, Tutorials, Resources, Thoughts",
+    "notes": "Your notes with tags and content"
+  }
+}

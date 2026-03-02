@@ -1,0 +1,202 @@
+/* Craft Developer Template */
+/* Inspiration: paco.me (Paco Coursey) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #fafafa;
+    --text: #171717;
+    --text-light: #737373;
+    --accent: #0066cc;
+    --border: #e5e5e5;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Newsreader', Georgia, serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+/* Header */
+header {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    margin-bottom: 1rem;
+}
+
+.tagline em {
+    font-family: var(--font-serif);
+    font-style: italic;
+}
+
+.current, .past {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.past {
+    margin-top: 0.25rem;
+}
+
+/* Links */
+a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--text-light);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.15s ease;
+}
+
+a:hover {
+    text-decoration-color: var(--text);
+}
+
+/* Sections */
+section {
+    margin: 2rem 0;
+}
+
+h2 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+    margin: 2.5rem 0;
+}
+
+/* Project List */
+.project-list {
+    list-style: none;
+}
+
+.project-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.project-list li:last-child {
+    border-bottom: none;
+}
+
+.project-list a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.project-list a:hover .project-name {
+    color: var(--accent);
+}
+
+.project-icon {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.project-name {
+    font-weight: 500;
+    transition: color 0.15s;
+}
+
+.project-desc {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Writing List */
+.writing-list {
+    list-style: none;
+}
+
+.writing-list li {
+    margin-bottom: 0.5rem;
+}
+
+.writing-list a {
+    color: var(--text);
+}
+
+.writing-list a.view-all {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Now Section */
+#now p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+#now .philosophy {
+    padding: 1rem 0;
+    color: var(--text);
+}
+
+#now .philosophy em {
+    font-family: var(--font-serif);
+    font-style: italic;
+}
+
+#now .music {
+    font-size: 0.9rem;
+}
+
+/* Connect Section */
+#connect {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    main {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Focus states */
+a:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+    background: var(--accent);
+    color: white;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    <title>Your Newsletter | Warm Essayist</title>
+    <meta name="description" content="Essays on life, creativity, and meaningful work">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="publication">
+                    <h1 class="publication-name">Your Newsletter</h1>
+                    <p class="tagline">Essays on life, creativity, and meaningful work</p>
+                </div>
+                <nav class="header-nav">
+                    <a href="#essays">Essays</a>
+                    <a href="#about">About</a>
+                    <button class="subscribe-btn">Subscribe</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Featured Essay -->
+            <article class="featured-essay">
+                <div class="essay-image">
+                    <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?w=800" alt="Featured essay image">
+                </div>
+                <div class="essay-content">
+                    <span class="essay-tag">Featured</span>
+                    <h2><a href="#">The Art of Slowing Down</a></h2>
+                    <p class="essay-excerpt">
+                        In a world obsessed with productivity, I've been thinking about what it means to
+                        truly slow down. Not as a productivity hack, but as a way of being...
+                    </p>
+                    <footer class="essay-meta">
+                        <time datetime="2026-02-15">February 15, 2026</time>
+                        <span class="read-time">8 min read</span>
+                    </footer>
+                </div>
+            </article>
+
+            <!-- Essay Grid -->
+            <section class="essays-section" id="essays">
+                <h2 class="section-title">Recent Essays</h2>
+                <div class="essays-grid">
+                    <article class="essay-card">
+                        <h3><a href="#">On Writing Every Day</a></h3>
+                        <p>What I learned from 365 days of daily writing practice...</p>
+                        <time datetime="2026-02-01">Feb 1, 2026</time>
+                    </article>
+                    <article class="essay-card">
+                        <h3><a href="#">The Courage to Create</a></h3>
+                        <p>Why making things requires us to face our deepest fears...</p>
+                        <time datetime="2026-01-15">Jan 15, 2026</time>
+                    </article>
+                    <article class="essay-card">
+                        <h3><a href="#">Finding Your Voice</a></h3>
+                        <p>After years of mimicking others, here's how I found my own style...</p>
+                        <time datetime="2026-01-01">Jan 1, 2026</time>
+                    </article>
+                    <article class="essay-card">
+                        <h3><a href="#">The Gift of Solitude</a></h3>
+                        <p>Learning to be alone without being lonely...</p>
+                        <time datetime="2025-12-15">Dec 15, 2025</time>
+                    </article>
+                </div>
+                <a href="#" class="view-all">View all essays →</a>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section" id="about">
+                <div class="about-content">
+                    <div class="author-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Author">
+                    </div>
+                    <div class="author-bio">
+                        <h2>About</h2>
+                        <p>
+                            I'm a writer exploring the intersection of creativity, meaning, and everyday life.
+                            This newsletter is where I share my thoughts on how to live and work with more
+                            intention.
+                        </p>
+                        <p>
+                            Previously, I worked as a journalist and editor. Now I write full-time,
+                            focusing on essays that help people think more deeply about their lives.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter CTA -->
+            <section class="newsletter-cta">
+                <h2>Join the newsletter</h2>
+                <p>Get new essays delivered to your inbox every week. No spam, unsubscribe anytime.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="your@email.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="subscriber-count">Join 10,000+ readers</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="#">Twitter</a>
+                <a href="#">RSS</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

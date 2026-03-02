@@ -1,0 +1,310 @@
+/* Academic Researcher Template */
+/* Inspiration: benjaminmoll.com */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #527CB0;
+    --primary-hover: #14AFF4;
+    --text: #000000;
+    --text-light: #666666;
+    --footer-text: #929292;
+    --bg: #ffffff;
+    --border: #e5e5e5;
+    --font-main: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header & Navigation */
+header {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    padding: 3rem 0;
+}
+
+/* Profile Section */
+.profile {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.profile h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile .title {
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.profile .affiliation {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.profile .role {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.cv-download {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.cv-download:hover {
+    color: var(--primary-hover);
+}
+
+/* Content Sections */
+.content-section {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.content-section h2 {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+/* Paper List */
+.paper-list {
+    list-style: none;
+}
+
+.paper-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.paper-list li:last-child {
+    border-bottom: none;
+}
+
+.paper-title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.paper-meta {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.paper-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.paper-links a {
+    color: var(--primary);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.paper-links a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* Lecture List */
+.lecture-list {
+    list-style: none;
+}
+
+.lecture-list li {
+    padding: 0.75rem 0;
+}
+
+.lecture-list a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lecture-list a:hover {
+    text-decoration: underline;
+}
+
+.lecture-venue {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* Code List */
+.code-list {
+    list-style: none;
+}
+
+.code-list li {
+    padding: 0.75rem 0;
+}
+
+.code-list a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.code-list a:hover {
+    text-decoration: underline;
+}
+
+.code-desc {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* View All Link */
+.view-all {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    color: var(--footer-text);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-image {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .main-nav ul.open {
+        display: flex;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header, footer, .paper-links {
+        display: none;
+    }
+
+    .profile {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Focus States for Accessibility */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--accent, #0066cc);
+    outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent, #0066cc);
+    outline-offset: 2px;
+}

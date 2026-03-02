@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    <title>Your Digital Garden</title>
+    <meta name="description" content="A collection of notes, ideas, and resources">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1>Digital Garden</h1>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Close sidebar">×</button>
+            </div>
+
+            <div class="search-box">
+                <input type="search" id="searchInput" placeholder="Search notes...">
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-filter="all">All Notes</a>
+                <a href="#" class="nav-item" data-filter="essay">Essays</a>
+                <a href="#" class="nav-item" data-filter="tutorial">Tutorials</a>
+                <a href="#" class="nav-item" data-filter="resource">Resources</a>
+                <a href="#" class="nav-item" data-filter="thought">Thoughts</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="icon-light">☀️</span>
+                    <span class="icon-dark">🌙</span>
+                </button>
+                <a href="#about">About</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+                <nav class="breadcrumb">
+                    <a href="#">Home</a>
+                    <span>/</span>
+                    <span>All Notes</span>
+                </nav>
+            </header>
+
+            <div class="content-area">
+                <div class="notes-grid" id="notesGrid">
+                    <!-- Essay -->
+                    <article class="note-card" data-category="essay" data-searchable="building in public writing process">
+                        <div class="note-tags">
+                            <span class="tag tag-blue">Essay</span>
+                        </div>
+                        <h2><a href="#">Building in Public</a></h2>
+                        <p>Why I share my work process openly and what I've learned from doing so...</p>
+                        <footer class="note-meta">
+                            <time>Feb 2026</time>
+                        </footer>
+                    </article>
+
+                    <!-- Tutorial -->
+                    <article class="note-card" data-category="tutorial" data-searchable="css grid layout responsive design">
+                        <div class="note-tags">
+                            <span class="tag tag-green">Tutorial</span>
+                        </div>
+                        <h2><a href="#">CSS Grid Deep Dive</a></h2>
+                        <p>A comprehensive guide to CSS Grid with practical examples...</p>
+                        <footer class="note-meta">
+                            <time>Jan 2026</time>
+                        </footer>
+                    </article>
+
+                    <!-- Resource -->
+                    <article class="note-card" data-category="resource" data-searchable="design tools software recommendations">
+                        <div class="note-tags">
+                            <span class="tag tag-purple">Resource</span>
+                        </div>
+                        <h2><a href="#">My Design Toolkit</a></h2>
+                        <p>Tools, apps, and resources I use for design work...</p>
+                        <footer class="note-meta">
+                            <time>Jan 2026</time>
+                        </footer>
+                    </article>
+
+                    <!-- Thought -->
+                    <article class="note-card" data-category="thought" data-searchable="productivity work life balance">
+                        <div class="note-tags">
+                            <span class="tag tag-orange">Thought</span>
+                        </div>
+                        <h2><a href="#">On Productivity</a></h2>
+                        <p>Some contrarian thoughts on productivity culture...</p>
+                        <footer class="note-meta">
+                            <time>Dec 2025</time>
+                        </footer>
+                    </article>
+
+                    <!-- More notes -->
+                    <article class="note-card" data-category="essay" data-searchable="learning teaching knowledge">
+                        <div class="note-tags">
+                            <span class="tag tag-blue">Essay</span>
+                        </div>
+                        <h2><a href="#">Learning by Teaching</a></h2>
+                        <p>How teaching others accelerates your own learning...</p>
+                        <footer class="note-meta">
+                            <time>Dec 2025</time>
+                        </footer>
+                    </article>
+
+                    <article class="note-card" data-category="tutorial" data-searchable="javascript async await promises">
+                        <div class="note-tags">
+                            <span class="tag tag-green">Tutorial</span>
+                        </div>
+                        <h2><a href="#">Async JavaScript</a></h2>
+                        <p>Understanding promises, async/await, and error handling...</p>
+                        <footer class="note-meta">
+                            <time>Nov 2025</time>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+
+            <section class="about-section" id="about">
+                <h2>About This Garden</h2>
+                <p>
+                    This is my digital garden - a collection of notes, ideas, and resources that I've
+                    cultivated over time. Unlike a blog, these notes are constantly evolving and
+                    interconnected.
+                </p>
+                <p>
+                    Feel free to explore, and don't expect everything to be polished. That's the point.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

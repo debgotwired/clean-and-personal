@@ -1,0 +1,283 @@
+/* Angel Investor Template */
+/* Inspiration: ivanbercovich.com, tim.blog/portfolio */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #fafafa;
+    --surface: #ffffff;
+    --text: #1a1a1a;
+    --text-light: #6b7280;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --border: #e5e7eb;
+    --font-main: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Header */
+header {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    color: var(--text-light);
+}
+
+/* Sections */
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+/* Thesis Section */
+.thesis p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.investment-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background: var(--surface);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.detail {
+    text-align: center;
+}
+
+.detail .label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+}
+
+.detail .value {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* Portfolio Section */
+.sector-group {
+    margin-bottom: 2rem;
+}
+
+.company-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.company {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.company:hover {
+    background: var(--accent-light);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Antiportfolio Section */
+.antiportfolio {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.antiportfolio-intro {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.antiportfolio-list {
+    list-style: none;
+}
+
+.antiportfolio-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.antiportfolio-list li:last-child {
+    border-bottom: none;
+}
+
+.antiportfolio-list .company-name {
+    font-weight: 600;
+    display: block;
+}
+
+.antiportfolio-list .outcome {
+    font-size: 0.875rem;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.antiportfolio-list p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Writing Section */
+.writing-list {
+    list-style: none;
+}
+
+.writing-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.writing-list li:last-child {
+    border-bottom: none;
+}
+
+.writing-list a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.writing-list a:hover {
+    color: var(--accent);
+}
+
+/* Contact Section */
+.contact p {
+    margin-bottom: 1rem;
+}
+
+.contact a {
+    color: var(--accent);
+}
+
+.response-note {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Footer */
+footer {
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
+
+.copyright {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    main {
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .investment-details {
+        grid-template-columns: 1fr;
+    }
+
+    .company-grid {
+        flex-direction: column;
+    }
+
+    .company {
+        text-align: center;
+    }
+}
+
+/* Focus States for Accessibility */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--accent, #0066cc);
+    outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent, #0066cc);
+    outline-offset: 2px;
+}

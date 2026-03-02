@@ -1,0 +1,44 @@
+{
+  "name": "Now Page Focus",
+  "description": "Anti-design brutalist template with prominent /now page, inspired by Derek Sivers",
+  "inspiration": "sive.rs",
+  "preview": "preview.png",
+  "colors": {
+    "background": "#ffffff",
+    "text": "#000000",
+    "heading": "#800",
+    "link": "#20b",
+    "linkVisited": "#606",
+    "muted": "#666",
+    "border": "#ccc"
+  },
+  "fonts": {
+    "heading": "Tahoma, Verdana, sans-serif",
+    "body": "Georgia, serif"
+  },
+  "sections": [
+    "about",
+    "now",
+    "writing",
+    "books",
+    "projects",
+    "contact"
+  ],
+  "features": [
+    "no-css-classes",
+    "semantic-html",
+    "now-page",
+    "minimal-js"
+  ],
+  "customizable": {
+    "name": "Your Name",
+    "about": "Brief introduction",
+    "nowContent": "What you're currently doing",
+    "nowLocation": "Where you are",
+    "writing": "List of essays",
+    "books": "Your books",
+    "projects": "Your projects",
+    "email": "Contact email"
+  },
+  "philosophy": "Brutalist web design: no unnecessary decoration, semantic HTML, readable typography, fast loading"
+}

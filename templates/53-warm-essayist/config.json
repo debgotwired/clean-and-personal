@@ -1,0 +1,42 @@
+{
+  "name": "Warm Essayist",
+  "description": "Magazine-style newsletter template with warm earth tones, perfect for writers and essayists",
+  "inspiration": "henrikkarlsson.xyz (Escaping Flatland)",
+  "preview": "preview.png",
+  "colors": {
+    "background": "#f0efea",
+    "surface": "#ffffff",
+    "text": "#1a1a1a",
+    "textLight": "#6b7280",
+    "accent": "#b8860b",
+    "border": "#e5e0d5",
+    "footerBg": "#2d2d2d"
+  },
+  "fonts": {
+    "heading": "Inter",
+    "body": "Spectral"
+  },
+  "sections": [
+    "header",
+    "featured-essay",
+    "essay-grid",
+    "about",
+    "newsletter-cta",
+    "footer"
+  ],
+  "features": [
+    "newsletter-signup",
+    "essay-grid",
+    "featured-essay",
+    "warm-palette",
+    "serif-body"
+  ],
+  "customizable": {
+    "publicationName": "Your Newsletter",
+    "tagline": "Your tagline",
+    "authorName": "Your Name",
+    "authorBio": "Your bio",
+    "authorImage": "Author photo URL",
+    "essays": "List of essays with titles and excerpts"
+  }
+}

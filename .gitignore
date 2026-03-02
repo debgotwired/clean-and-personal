@@ -37,3 +37,10 @@ yarn.lock
 # User-specific files
 my-site/
 personal-site/
+
+# QA reports (keep only latest)
+qa/reports/qa-report-*.json
+
+# Build logs
+build-log.txt
+monitor-log.txt

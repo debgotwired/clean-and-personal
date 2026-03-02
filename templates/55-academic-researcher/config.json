@@ -1,0 +1,41 @@
+{
+  "name": "Academic Researcher",
+  "description": "Professional academic website with papers, lectures, and code sections",
+  "inspiration": "benjaminmoll.com",
+  "preview": "preview.png",
+  "colors": {
+    "primary": "#527CB0",
+    "primaryHover": "#14AFF4",
+    "text": "#000000",
+    "textLight": "#666666",
+    "background": "#ffffff",
+    "border": "#e5e5e5"
+  },
+  "fonts": {
+    "main": "Arial, Helvetica, sans-serif"
+  },
+  "sections": [
+    "profile",
+    "papers",
+    "lectures",
+    "codes",
+    "contact"
+  ],
+  "features": [
+    "cv-download",
+    "google-scholar-link",
+    "paper-links",
+    "mobile-responsive"
+  ],
+  "customizable": {
+    "name": "Dr. Your Name",
+    "title": "Professor of Economics",
+    "affiliation": "University name and department",
+    "profileImage": "Your photo",
+    "papers": "List of publications",
+    "lectures": "Course materials",
+    "codes": "Research code repositories",
+    "cvLink": "Link to CV PDF",
+    "email": "Contact email"
+  }
+}
