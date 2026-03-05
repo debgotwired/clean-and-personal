@@ -1,0 +1,27 @@
+{
+  "name": "Friendly Blogger",
+  "description": "Warm, personal blog template with rotating greetings, light/dark theme toggle, and author sidebar. Inspired by endler.dev.",
+  "inspiration": "https://endler.dev/",
+  "colors": {
+    "primary": "#c44d58",
+    "link": "#2a6496",
+    "text": "#2d2d2d",
+    "background": "#fafafa"
+  },
+  "fonts": {
+    "heading": "Outfit",
+    "body": "Merriweather",
+    "code": "JetBrains Mono"
+  },
+  "sections": ["articles", "about", "social"],
+  "features": [
+    "Rotating international greetings",
+    "Light/dark theme toggle with localStorage",
+    "Sticky author sidebar",
+    "Blog-first layout",
+    "Social media icons (GitHub, Mastodon, X)",
+    "RSS feed link",
+    "Responsive design",
+    "Accessibility compliant"
+  ]
+}

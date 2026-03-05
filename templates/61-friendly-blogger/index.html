@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    <title>Your Name - Developer & Writer</title>
+    <meta name="description" content="Personal blog about software development, Rust, and technology">
+    <link rel="icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <div class="container">
+            <h1 class="site-title">
+                <a href="/">
+                    <span class="greeting">Servus</span>, I'm <span class="name">Your Name</span>
+                </a>
+            </h1>
+            <nav>
+                <a href="#articles">Articles</a>
+                <a href="#about">About</a>
+                <a href="/rss.xml" class="icon-link" aria-label="RSS Feed">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1Z"/></svg>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        <section id="articles" class="articles" aria-labelledby="articles-heading">
+            <h2 id="articles-heading">Recent Articles</h2>
+
+            <article class="article-card">
+                <time datetime="2026-02-20">February 20, 2026</time>
+                <h3><a href="#">Building Faster CLI Tools with Rust</a></h3>
+                <p>A deep dive into performance optimization techniques for command-line applications, with real-world benchmarks and practical examples.</p>
+                <a href="#" class="read-more" aria-label="Read more about Building Faster CLI Tools with Rust">More &raquo;</a>
+            </article>
+
+            <article class="article-card">
+                <time datetime="2026-02-05">February 5, 2026</time>
+                <h3><a href="#">Why I Switched to a Static Site Generator</a></h3>
+                <p>After years of using various platforms, I finally built my own static site generator. Here's what I learned along the way.</p>
+                <a href="#" class="read-more" aria-label="Read more about Why I Switched to a Static Site Generator">More &raquo;</a>
+            </article>
+
+            <article class="article-card">
+                <time datetime="2026-01-18">January 18, 2026</time>
+                <h3><a href="#">The Art of Writing Documentation</a></h3>
+                <p>Good documentation is an art form. These are the principles I've developed over a decade of writing docs for open source projects.</p>
+                <a href="#" class="read-more" aria-label="Read more about The Art of Writing Documentation">More &raquo;</a>
+            </article>
+
+            <article class="article-card">
+                <time datetime="2026-01-02">January 2, 2026</time>
+                <h3><a href="#">My Favorite Tools in 2025</a></h3>
+                <p>A curated list of development tools, apps, and utilities that made me more productive this year.</p>
+                <a href="#" class="read-more" aria-label="Read more about My Favorite Tools in 2025">More &raquo;</a>
+            </article>
+
+            <article class="article-card">
+                <time datetime="2025-12-15">December 15, 2025</time>
+                <h3><a href="#">Understanding Async Patterns</a></h3>
+                <p>Async programming can be tricky. Let's break down the most common patterns and when to use each one.</p>
+                <a href="#" class="read-more" aria-label="Read more about Understanding Async Patterns">More &raquo;</a>
+            </article>
+
+            <div class="pagination">
+                <a href="#" class="older">Older posts &rarr;</a>
+            </div>
+        </section>
+
+        <aside id="about" class="sidebar" aria-labelledby="about-heading">
+            <div class="author-card">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=friendly" alt="Your Name" class="author-photo">
+                <h3 id="about-heading">About Me</h3>
+                <p>
+                    Hi! I'm a software developer passionate about performance, developer tools, and clean code.
+                    I write about programming, technology, and the craft of building software.
+                </p>
+                <p>
+                    I run <a href="#">Your Company</a>, where we help teams build better software.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/you" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://mastodon.social/@you" aria-label="Mastodon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.193 7.879c0-5.206-3.411-6.732-3.411-6.732C18.062.357 15.108.025 12.041 0h-.076c-3.068.025-6.02.357-7.74 1.147 0 0-3.411 1.526-3.411 6.732 0 1.192-.023 2.618.015 4.129.124 5.092.933 10.109 5.641 11.355 2.17.574 4.034.695 5.535.612 2.722-.15 4.25-.972 4.25-.972l-.09-1.975s-1.945.613-4.129.539c-2.165-.074-4.449-.233-4.799-2.891a5.499 5.499 0 0 1-.048-.745s2.125.52 4.817.643c1.646.075 3.19-.097 4.758-.283 3.007-.359 5.625-2.212 5.954-3.905.517-2.665.475-6.507.475-6.507zm-4.024 6.709h-2.497V8.469c0-1.29-.543-1.944-1.628-1.944-1.2 0-1.802.776-1.802 2.312v3.349h-2.483v-3.35c0-1.536-.602-2.312-1.802-2.312-1.085 0-1.628.655-1.628 1.944v6.119H4.832V8.284c0-1.289.328-2.313.987-3.07.68-.758 1.569-1.146 2.674-1.146 1.278 0 2.246.491 2.886 1.474L12 6.585l.622-1.043c.64-.983 1.608-1.474 2.886-1.474 1.104 0 1.994.388 2.674 1.146.658.757.986 1.781.986 3.07v6.304z"/></svg>
+                    </a>
+                    <a href="https://twitter.com/you" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Your Name. Content available under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
