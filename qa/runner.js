@@ -17,6 +17,7 @@ const CssTests = require('./tests/css.test');
 const JavaScriptTests = require('./tests/javascript.test');
 const AccessibilityTests = require('./tests/accessibility.test');
 const ResponsiveTests = require('./tests/responsive.test');
+const ReadmeTests = require('./tests/readme.test');
 
 class QARunner {
   constructor(options = {}) {
@@ -24,6 +25,7 @@ class QARunner {
       verbose: false,
       template: null,
       category: null,
+      fix: false,
       ...options
     };
 
@@ -36,6 +38,11 @@ class QARunner {
       responsive: new ResponsiveTests()
     };
 
+    // Project-level tests (run once, not per template)
+    this.projectTests = {
+      readme: new ReadmeTests()
+    };
+
     this.results = [];
     this.startTime = Date.now();
   }
@@ -45,6 +52,9 @@ class QARunner {
     console.log('  CLEAN AND PERSONAL - QA TEST SUITE');
     console.log('  ' + new Date().toISOString());
     console.log('='.repeat(60) + '\n');
+
+    // Run project-level tests first (README sync, etc.)
+    await this.runProjectTests();
 
     // Get templates to test
     const templates = this.getTemplates();
@@ -64,6 +74,60 @@ class QARunner {
     this.printSummary(report);
 
     return report;
+  }
+
+  async runProjectTests() {
+    // Skip if testing specific template or category (unless category is readme)
+    if (this.options.template && !this.options.category) {
+      return;
+    }
+
+    if (this.options.category && this.options.category !== 'readme') {
+      return;
+    }
+
+    console.log('📋 Running project-level tests...\n');
+
+    for (const [name, test] of Object.entries(this.projectTests)) {
+      try {
+        const results = await test.run({ fix: this.options.fix });
+
+        if (this.options.verbose) {
+          console.log(`  📁 ${name.toUpperCase()}`);
+          for (const result of results) {
+            const icon = result.passed ? '✓' : (result.severity === 'error' ? '✗' : '⚠');
+            const color = result.passed ? '\x1b[32m' : (result.severity === 'error' ? '\x1b[31m' : '\x1b[33m');
+            console.log(`     ${color}${icon}\x1b[0m ${result.test}: ${result.message}`);
+          }
+        } else {
+          const passed = results.filter(r => r.passed).length;
+          const failed = results.filter(r => !r.passed && r.severity === 'error').length;
+          const warnings = results.filter(r => !r.passed && r.severity === 'warning').length;
+
+          process.stdout.write(`  ${name}: `);
+          if (failed > 0) {
+            console.log(`❌ ${failed} errors, ${warnings} warnings`);
+          } else if (warnings > 0) {
+            console.log(`⚠️  ${warnings} warnings`);
+          } else {
+            console.log(`✅ ${passed} checks passed`);
+          }
+        }
+
+        this.results.push(...results);
+      } catch (error) {
+        this.results.push({
+          category: name,
+          template: 'project',
+          test: `${name} tests`,
+          passed: false,
+          message: `Error: ${error.message}`,
+          severity: 'error'
+        });
+      }
+    }
+
+    console.log('');
   }
 
   getTemplates() {
@@ -301,7 +365,8 @@ if (require.main === module) {
   const options = {
     verbose: args.includes('--verbose') || args.includes('-v'),
     template: args.includes('--template') ? args[args.indexOf('--template') + 1] : null,
-    category: args.includes('--category') ? args[args.indexOf('--category') + 1] : null
+    category: args.includes('--category') ? args[args.indexOf('--category') + 1] : null,
+    fix: args.includes('--fix')
   };
 
   // Help
@@ -315,15 +380,19 @@ Options:
   --template <name>   Test specific template(s) matching name
   --category <cat>    Test specific category only
   --verbose, -v       Show detailed test output
+  --fix               Auto-fix README template counts
   --help, -h          Show this help
 
 Categories:
+  readme              Project-level README validation
   structure, html, css, javascript, accessibility, responsive
 
 Examples:
   node qa/runner.js                      # Run all tests
   node qa/runner.js --template 51        # Test templates starting with 51
   node qa/runner.js --category html      # Only HTML tests
+  node qa/runner.js --category readme    # Only README sync tests
+  node qa/runner.js --fix                # Auto-fix README counts
   node qa/runner.js --verbose            # Detailed output
 `);
     process.exit(0);

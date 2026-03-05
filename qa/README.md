@@ -17,11 +17,23 @@ node qa/runner.js --template 51
 # Test specific category
 node qa/runner.js --category html
 
+# Check README is in sync with templates
+node qa/runner.js --category readme
+
+# Auto-fix README template counts
+node qa/runner.js --fix
+
 # Run screenshots + QA
 npm run qa:full
 ```
 
 ## Test Categories
+
+### 0. README Tests (`readme.test.js`) - Project Level
+- Template count matches in title, badges, headers
+- All templates listed in README tables
+- Features section count matches
+- Auto-fix available with `--fix` flag
 
 ### 1. Structure Tests (`structure.test.js`)
 - Required files exist (index.html, styles.css, script.js, config.json, README.md)
