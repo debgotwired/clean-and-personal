@@ -1,6 +1,6 @@
 # Clean and Personal
 
-**Open source personal website builder with 60 beautiful production-ready templates.**
+**Open source personal website builder with 61 beautiful production-ready templates.**
 
 Build your personal website in minutes with Claude's help. No coding required (but you can customize everything if you want).
 
@@ -8,7 +8,7 @@ Build your personal website in minutes with Claude's help. No coding required (b
 
 ![GitHub stars](https://img.shields.io/github/stars/debgotwired/clean-and-personal?style=social)
 ![License](https://img.shields.io/github/license/debgotwired/clean-and-personal)
-![Templates](https://img.shields.io/badge/templates-60-success)
+![Templates](https://img.shields.io/badge/templates-61-success)
 ![QA](https://img.shields.io/badge/QA-passing-brightgreen)
 
 ## 🎉 What's New
@@ -27,7 +27,7 @@ Build your personal website in minutes with Claude's help. No coding required (b
 
 ## ✨ Features
 
-- 🎨 **60 Beautiful Templates** - Complete collection covering every style, layout, and use case
+- 🎨 **61 Beautiful Templates** - Complete collection covering every style, layout, and use case
 - 🧪 **QA Suite** - Automated testing for structure, HTML, CSS, JS, accessibility, responsive
 - 🤖 **Claude-Powered** - Customize conversationally: "make it blue", "add a contact form"
 - 📄 **PDF Import** - Extract info from LinkedIn, resumes, Twitter automatically
@@ -88,7 +88,7 @@ cd clean-and-personal
 #### Option B: Manual Setup
 
 1. **Browse templates**
-   - Open `index.html` in your browser to see all 60 templates
+   - Open `index.html` in your browser to see all 61 templates
    - Or explore the `templates/` directory
 
 2. **Choose a template**
@@ -117,7 +117,7 @@ Click the button below for one-click deployment:
 
 Or follow the [Deployment Guide](docs/DEPLOYMENT.md) for other hosting options.
 
-## 📚 All 60 Templates
+## 📚 All 61 Templates
 
 ### Core Templates (1-10) - Versatile & Popular
 
@@ -208,6 +208,7 @@ Or follow the [Deployment Guide](docs/DEPLOYMENT.md) for other hosting options.
 | 58 | **Scrollytelling** | Immersive parallax storytelling | Storytellers, creatives | [View](templates/58-scrollytelling/) |
 | 59 | **AI Founder** | Dark hacker, typewriter effect | AI founders, tech entrepreneurs | [View](templates/59-ai-founder/) |
 | 60 | **Creative Director** | Services grid, testimonials | Creative directors, consultants | [View](templates/60-creative-director/) |
+| 61 | **Friendly Blogger** | Warm greetings, light/dark toggle | Tech bloggers, developers | [View](templates/61-friendly-blogger/) |
 
 See [docs/50-TEMPLATES-TAXONOMY.md](docs/50-TEMPLATES-TAXONOMY.md) for the full roadmap.
 
@@ -386,6 +387,7 @@ Inspired by the best personal websites on the internet:
 - [paco.me](https://paco.me) - Clean markdown style
 - [cassidoo.co](https://cassidoo.co) - Playful and approachable
 - [swyx.io](https://www.swyx.io/) - Blog-first layout
+- [endler.dev](https://endler.dev/) - Warm, friendly blogger aesthetic
 
 And many more listed in [docs/TEMPLATES.md](docs/TEMPLATES.md)
 
@@ -402,7 +404,7 @@ Questions? Found a bug? Want to contribute?
 
 ## 📊 Project Stats
 
-- **Templates Completed:** 60 / 60 (100%) ✅
+- **Templates Completed:** 61 ✅
 - **Total Files:** 300+ production-ready files
 - **Lines of Code:** 35,000+ lines of HTML/CSS/JS
 - **QA Status:** ✅ Automated test suite with 70+ tests per template
