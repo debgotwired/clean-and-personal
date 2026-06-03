@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    <title>Your Name | Credential Folio</title>
+    <meta name="description" content="Personal site with work history, credentials, and press mentions">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="site-header">
+            <h1 class="name">Your Name</h1>
+            <p class="tagline">Founder, Design Engineer, Product Leader</p>
+        </header>
+
+        <!-- Latest Work -->
+        <section class="work-section fade-in">
+            <h2 class="section-label">Latest</h2>
+
+            <div class="work-item">
+                <div class="work-logo">
+                    <img src="assets/logo-company-a.svg" alt="Company A logo" onerror="this.parentElement.classList.add('no-logo')">
+                </div>
+                <div class="work-info">
+                    <div class="work-header">
+                        <h3><a href="#">Company A</a></h3>
+                        <span class="work-date">2025&ndash;</span>
+                    </div>
+                    <p class="work-role">Member of Technical Staff</p>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-logo">
+                    <img src="assets/logo-company-b.svg" alt="Company B logo" onerror="this.parentElement.classList.add('no-logo')">
+                </div>
+                <div class="work-info">
+                    <div class="work-header">
+                        <h3><a href="#">Company B</a></h3>
+                        <span class="work-date">2023&ndash;</span>
+                    </div>
+                    <p class="work-role">Head of Product</p>
+                    <p class="work-prev">Previously Head of Frontend &amp; Design, 2023&ndash;25</p>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-logo">
+                    <img src="assets/logo-company-c.svg" alt="Company C logo" onerror="this.parentElement.classList.add('no-logo')">
+                </div>
+                <div class="work-info">
+                    <div class="work-header">
+                        <h3><a href="#">Company C</a></h3>
+                        <span class="work-date">2016&ndash;23</span>
+                    </div>
+                    <p class="work-role">Founder &amp; CTO / CPO</p>
+                    <p class="work-desc">Benefits platform for independent workers. <span class="badge">YC W19</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Earlier Work -->
+        <section class="work-section fade-in">
+            <h2 class="section-label">Earlier</h2>
+
+            <div class="work-item">
+                <div class="work-logo">
+                    <img src="assets/logo-company-d.svg" alt="Company D logo" onerror="this.parentElement.classList.add('no-logo')">
+                </div>
+                <div class="work-info">
+                    <div class="work-header">
+                        <h3>Company D</h3>
+                        <span class="work-date">2011&ndash;15</span>
+                    </div>
+                    <p class="work-role">Senior Design Engineer</p>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-logo">
+                    <img src="assets/logo-company-e.svg" alt="Company E logo" onerror="this.parentElement.classList.add('no-logo')">
+                </div>
+                <div class="work-info">
+                    <div class="work-header">
+                        <h3>Company E</h3>
+                        <span class="work-date">2014</span>
+                    </div>
+                    <p class="work-role">Product Design</p>
+                    <p class="work-desc">Design Fellow Program</p>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-logo">
+                    <img src="assets/logo-company-f.svg" alt="Company F logo" onerror="this.parentElement.classList.add('no-logo')">
+                </div>
+                <div class="work-info">
+                    <div class="work-header">
+                        <h3>Company F</h3>
+                        <span class="work-date">2013</span>
+                    </div>
+                    <p class="work-role">Software Engineer Intern</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials -->
+        <section class="credentials-section fade-in">
+            <h2 class="section-label">Credentials</h2>
+
+            <div class="credential-item">
+                <h3>Investment Advisor Representative</h3>
+                <p class="credential-detail">FINRA / SEC &middot; CRD #0000000</p>
+            </div>
+
+            <div class="credential-item">
+                <h3>Licensed Insurance Agent</h3>
+                <p class="credential-detail">State Division of Insurance &middot; NPN #0000000</p>
+            </div>
+        </section>
+
+        <!-- Press / Misc -->
+        <section class="press-section fade-in">
+            <h2 class="section-label">Misc</h2>
+
+            <div class="press-item">
+                <span class="press-date">2021</span>
+                <p><a href="#">Company C raises Series A to expand benefits platform</a></p>
+            </div>
+
+            <div class="press-item">
+                <span class="press-date">2019</span>
+                <p><a href="#">Seed round coverage in TechCrunch</a></p>
+            </div>
+
+            <div class="press-item">
+                <span class="press-date">2016</span>
+                <p><a href="#">Early concept work featured in Product Hunt</a></p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer fade-in">
+            <div class="footer-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://x.com" target="_blank" rel="noopener">X</a>
+                <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a>
+            </div>
+            <div class="footer-secondary">
+                <a href="resume.pdf" class="resume-link">Resume (PDF)</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

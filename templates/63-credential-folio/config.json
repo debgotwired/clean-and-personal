@@ -1,0 +1,45 @@
+{
+  "name": "Credential Folio",
+  "description": "Logo-rich work history with credentials section, press mentions, and social footer. Inspired by ambrosino.io.",
+  "inspiration": "ambrosino.io",
+  "preview": "preview.png",
+  "colors": {
+    "background": "#ffffff",
+    "text": "#1a1a1a",
+    "textLight": "#6b6b6b",
+    "border": "#e8e8e8",
+    "hoverBg": "#f7f7f7",
+    "accent": "#111111"
+  },
+  "fonts": {
+    "heading": "Inter",
+    "body": "Inter"
+  },
+  "sections": [
+    "header",
+    "latest-work",
+    "earlier-work",
+    "credentials",
+    "press",
+    "footer"
+  ],
+  "features": [
+    "Company logo thumbnails",
+    "Grouped work timeline (Latest / Earlier)",
+    "Credentials and licenses section",
+    "Press mentions with dates",
+    "Social links footer with resume PDF",
+    "Scroll fade-in animations",
+    "Fully responsive",
+    "Light minimal aesthetic"
+  ],
+  "customizable": {
+    "name": "Your Name",
+    "tagline": "Your role description",
+    "latestWork": "Current and recent positions with logos",
+    "earlierWork": "Past positions with logos",
+    "credentials": "Licenses, certifications, registrations",
+    "press": "Press mentions and articles",
+    "links": ["LinkedIn", "GitHub", "Twitter", "Dribbble", "Resume PDF"]
+  }
+}
