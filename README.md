@@ -14,7 +14,7 @@ Build your personal website in minutes with Claude's help. No coding required (b
 ## 🎉 What's New
 
 **Latest Update (March 2026):**
-- ✅ **60 TEMPLATES!** - 10 new premium templates (51-60) inspired by real-world sites
+- ✅ **60+ TEMPLATES!** - 10 new premium templates (51-60) inspired by real-world sites
 - ✅ **Comprehensive QA Suite** - Automated testing for HTML, CSS, JS, accessibility, responsive
 - ✅ **New designs include:** Signature animation, brutalist /now pages, scrollytelling, Notion-style knowledge bases
 - ✅ **All templates pass QA** - 0 errors, 89%+ pass rate across all test categories
@@ -27,7 +27,7 @@ Build your personal website in minutes with Claude's help. No coding required (b
 
 ## ✨ Features
 
-- 🎨 **62 Beautiful Templates** - Complete collection covering every style, layout, and use case
+- 🎨 **63 Beautiful Templates** - Complete collection covering every style, layout, and use case
 - 🧪 **QA Suite** - Automated testing for structure, HTML, CSS, JS, accessibility, responsive
 - 🤖 **Claude-Powered** - Customize conversationally: "make it blue", "add a contact form"
 - 📄 **PDF Import** - Extract info from LinkedIn, resumes, Twitter automatically
