@@ -8,7 +8,7 @@ Build your personal website in minutes with Claude's help. No coding required (b
 
 ![GitHub stars](https://img.shields.io/github/stars/debgotwired/clean-and-personal?style=social)
 ![License](https://img.shields.io/github/license/debgotwired/clean-and-personal)
-![Templates](https://img.shields.io/badge/templates-62-success)
+![Templates](https://img.shields.io/badge/templates-63-success)
 ![QA](https://img.shields.io/badge/QA-passing-brightgreen)
 
 ## 🎉 What's New
